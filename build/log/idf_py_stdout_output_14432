@@ -1,0 +1,2322 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2025 23:26:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=41d84h (269700) map[0m
+[0;32mI (202) esp_image: segment 1: paddr=00051dac vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=00051db8 vaddr=3ffb0000 size=03c34h ( 15412) load[0m
+[0;32mI (214) esp_image: segment 3: paddr=000559f4 vaddr=40080000 size=0a624h ( 42532) load[0m
+[0;32mI (234) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d1ec0h (859840) map[0m
+[0;32mI (545) esp_image: segment 5: paddr=00131ee8 vaddr=4008a624 size=0b6b0h ( 46768) load[0m
+[0;32mI (575) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (576) boot: Disabling RNG early entropy source...[0m
+[0;32mI (587) cpu_start: Multicore app[0m
+[0;32mI (587) cpu_start: Pro cpu up.[0m
+[0;32mI (588) cpu_start: Starting app cpu, entry point is 0x40081390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (605) cpu_start: Pro cpu start user code[0m
+[0;32mI (605) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (605) cpu_start: Application information:[0m
+[0;32mI (610) cpu_start: Project name:     firebase-esp-idf[0m
+[0;32mI (616) cpu_start: App version:      34b0f21-dirty[0m
+[0;32mI (621) cpu_start: Compile time:     Apr 16 2025 23:26:14[0m
+[0;32mI (627) cpu_start: ELF file SHA256:  2a569ab228e30010...[0m
+[0;32mI (633) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (639) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (643) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (648) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (653) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (660) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (666) heap_init: At 3FFB99A0 len 00026660 (153 KiB): DRAM[0m
+[0;32mI (673) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (679) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (685) heap_init: At 40095CD4 len 0000A32C (40 KiB): IRAM[0m
+[0;32mI (693) spi_flash: detected chip: generic[0m
+[0;32mI (696) spi_flash: flash io: dio[0m
+[0;32mI (704) app_start: Starting scheduler on CPU0[0m
+[0;32mI (705) app_start: Starting scheduler on CPU1[0m
+[0;32mI (705) main_task: Started on CPU0[0m
+[0;32mI (715) main_task: Calling app_main()[0m
+I (755) wifi:wifi driver task: 3ffc2e10, prio:23, stack:6656, core=0
+I (765) wifi:wifi firmware version: 91b9630
+I (775) wifi:wifi certification version: v7.0
+I (775) wifi:config NVS flash: enabled
+I (775) wifi:config nano formating: disabled
+I (775) wifi:Init data frame dynamic rx buffer num: 32
+I (775) wifi:Init static rx mgmt buffer num: 5
+I (785) wifi:Init management short buffer num: 32
+I (785) wifi:Init dynamic tx buffer num: 32
+I (795) wifi:Init static rx buffer size: 1600
+I (795) wifi:Init static rx buffer num: 10
+I (795) wifi:Init dynamic rx buffer num: 32
+[0;32mI (805) wifi_init: rx ba win: 6[0m
+[0;32mI (805) wifi_init: tcpip mbox: 32[0m
+[0;32mI (815) wifi_init: udp mbox: 6[0m
+[0;32mI (815) wifi_init: tcp mbox: 6[0m
+[0;32mI (815) wifi_init: tcp tx win: 5744[0m
+[0;32mI (825) wifi_init: tcp rx win: 5744[0m
+[0;32mI (825) wifi_init: tcp mss: 1440[0m
+[0;32mI (835) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (835) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (845) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (925) wifi:mode : sta (20:43:a8:6c:c3:78)
+I (925) wifi:enable tsf
+I (935) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (945) wifi:state: init -> auth (b0)
+I (955) wifi:state: auth -> assoc (0)
+I (1955) wifi:state: assoc -> init (2700)
+I (1955) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+[0;31mE (1965) PLANT_MONITOR: Failed to connect to WiFi: shaurya[0m
+[0;31mE (1975) esp-tls: couldn't get hostname for :identitytoolkit.googleapis.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1975) esp-tls: Failed to open new connection[0m
+[0;31mE (1975) transport_base: Failed to open a new connection[0m
+[0;31mE (1985) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1995) FirebaseApp: Error while performing request esp_err_t code=0x7002 | status_code=0[0m
+[0;31mE (2005) FirebaseApp: request: url=https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=fHS2phVvAczp0JzapMePKkVfMJqz4QG6eRHhser6 
+method=1 
+post_field={"email":"ssranevjti@gmail.com", "password":"12345678", "returnSecureToken": true}[0m
+[0;31mE (2025) FirebaseApp: response=
+���?���?ś������M�
+K\�S?{*����x ��uU�������k�S}k��;����N�@(�N�S��K���	��I+��<:��橉�A(�d��ԥ���Հɡ�r��_��ѻ??�U��LB�F�3-����p��k�d�q�w4b�[0m
+[0;31mE (2045) FirebaseApp: Failed to get refresh token[0m
+[0;32mI (2045) PLANT_MONITOR: Soil moisture raw: 41[0m
+[0;32mI (2055) PLANT_MONITOR: Temp: 30.6 °C | Humidity: 47.1 %[0m
+[0;33mW (2065) PLANT_MONITOR: WiFi not connected, waiting...[0m
+[0;33mW (3065) PLANT_MONITOR: WiFi not connected, waiting...[0m
+[0;33mW (4065) PLANT_MONITOR: WiFi not connected, waiting...[0m
+I (4385) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (4385) wifi:state: init -> auth (b0)
+I (4395) wifi:state: auth -> assoc (0)
+I (4405) wifi:Association refused temporarily, comeback time 1000 (TUs)
+[0;33mW (5065) PLANT_MONITOR: Failed to push data to Firebase[0m
+I (5425) wifi:state: assoc -> assoc (0)
+I (5495) wifi:state: assoc -> run (10)
+I (5515) wifi:connected with shaurya, aid = 4, channel 5, BW20, bssid = 7a:46:54:76:03:75
+I (5525) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (5525) wifi:pm start, type: 1
+
+I (5555) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5555) wifi:<ba-add>idx:0 (ifx:0, 7a:46:54:76:03:75), tid:0, ssn:0, winSize:64
+[0;32mI (6065) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (6065) PLANT_MONITOR: Temp: 30.6 °C | Humidity: 47.1 %[0m
+[0;33mW (6065) PLANT_MONITOR: WiFi not connected, waiting...[0m
+[0;32mI (6535) esp_netif_handlers: sta ip: 192.168.39.178, mask: 255.255.255.0, gw: 192.168.39.228[0m
+[0;32mI (6535) PLANT_MONITOR: Got IP: 192.168.39.178[0m
+I (7625) wifi:<ba-add>idx:1 (ifx:0, 7a:46:54:76:03:75), tid:4, ssn:0, winSize:64
+[0;32mI (9755) RTDB: PUT successful[0m
+[0;33mW (9755) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (11505) RTDB: PUT successful[0m
+[0;33mW (11505) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (12505) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (13505) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (13505) PLANT_MONITOR: Temp: 30.6 °C | Humidity: 47.1 %[0m
+[0;32mI (14265) RTDB: PUT successful[0m
+[0;33mW (14265) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (15905) RTDB: PUT successful[0m
+[0;33mW (15905) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (17545) RTDB: PUT successful[0m
+[0;33mW (17545) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (18545) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (19545) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (19545) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.1 %[0m
+[0;32mI (20415) RTDB: PUT successful[0m
+[0;33mW (20415) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (22065) RTDB: PUT successful[0m
+[0;33mW (22065) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (23695) RTDB: PUT successful[0m
+[0;33mW (23695) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (24695) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (25695) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (25695) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.2 %[0m
+[0;32mI (26565) RTDB: PUT successful[0m
+[0;33mW (26565) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (28135) RTDB: PUT successful[0m
+[0;33mW (28135) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (29845) RTDB: PUT successful[0m
+[0;33mW (29845) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (30845) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (31845) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (31845) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.2 %[0m
+[0;32mI (32605) RTDB: PUT successful[0m
+[0;33mW (32605) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (34135) RTDB: PUT successful[0m
+[0;33mW (34135) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (35775) RTDB: PUT successful[0m
+[0;33mW (35785) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (36785) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (37785) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (37785) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.2 %[0m
+[0;32mI (38335) RTDB: PUT successful[0m
+[0;33mW (38335) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (39865) RTDB: PUT successful[0m
+[0;33mW (39865) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (41505) RTDB: PUT successful[0m
+[0;33mW (41515) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (42515) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (43515) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (43515) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.4 %[0m
+[0;32mI (44175) RTDB: PUT successful[0m
+[0;33mW (44175) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (45805) RTDB: PUT successful[0m
+[0;33mW (45805) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (47445) RTDB: PUT successful[0m
+[0;33mW (47445) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (48445) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (49445) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (49445) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.8 %[0m
+[0;32mI (50925) RTDB: PUT successful[0m
+[0;33mW (50935) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (52575) RTDB: PUT successful[0m
+[0;33mW (52575) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (54205) RTDB: PUT successful[0m
+[0;33mW (54205) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (55205) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (56205) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (56205) PLANT_MONITOR: Temp: 31.1 °C | Humidity: 66.9 %[0m
+[0;32mI (56875) RTDB: PUT successful[0m
+[0;33mW (56875) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (58915) RTDB: PUT successful[0m
+[0;33mW (58915) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (60555) RTDB: PUT successful[0m
+[0;33mW (60555) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (61555) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (62555) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (62555) PLANT_MONITOR: Temp: 30.9 °C | Humidity: 74.4 %[0m
+[0;32mI (63425) RTDB: PUT successful[0m
+[0;33mW (63425) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (64985) RTDB: PUT successful[0m
+[0;33mW (64985) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (66895) RTDB: PUT successful[0m
+[0;33mW (66895) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (67895) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (68895) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (68895) PLANT_MONITOR: Temp: 30.8 °C | Humidity: 56.8 %[0m
+[0;32mI (69565) RTDB: PUT successful[0m
+[0;33mW (69565) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (71205) RTDB: PUT successful[0m
+[0;33mW (71205) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (72835) RTDB: PUT successful[0m
+[0;33mW (72835) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (73835) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (74835) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (74835) PLANT_MONITOR: Temp: 30.7 °C | Humidity: 50.4 %[0m
+[0;32mI (75705) RTDB: PUT successful[0m
+[0;33mW (75705) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (77345) RTDB: PUT successful[0m
+[0;33mW (77345) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (78885) RTDB: PUT successful[0m
+[0;33mW (78885) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (79885) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (80885) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (80885) PLANT_MONITOR: Temp: 30.7 °C | Humidity: 48.6 %[0m
+[0;32mI (81755) RTDB: PUT successful[0m
+[0;33mW (81755) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (83285) RTDB: PUT successful[0m
+[0;33mW (83285) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (84925) RTDB: PUT successful[0m
+[0;33mW (84925) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (85925) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (86925) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (86925) PLANT_MONITOR: Temp: 30.6 °C | Humidity: 48.5 %[0m
+[0;32mI (87595) RTDB: PUT successful[0m
+[0;33mW (87595) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (89225) RTDB: PUT successful[0m
+[0;33mW (89225) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (90865) RTDB: PUT successful[0m
+[0;33mW (90865) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (91865) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (92865) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (92865) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 48.3 %[0m
+[0;32mI (93525) RTDB: PUT successful[0m
+[0;33mW (93525) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (95165) RTDB: PUT successful[0m
+[0;33mW (95165) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (96805) RTDB: PUT successful[0m
+[0;33mW (96805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (97805) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (98805) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (98805) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.8 %[0m
+[0;32mI (99495) RTDB: PUT successful[0m
+[0;33mW (99495) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (101105) RTDB: PUT successful[0m
+[0;33mW (101105) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (103565) RTDB: PUT successful[0m
+[0;33mW (103565) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (104565) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (105565) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (105565) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.6 %[0m
+[0;32mI (106215) RTDB: PUT successful[0m
+[0;33mW (106225) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (107965) RTDB: PUT successful[0m
+[0;33mW (107965) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (109505) RTDB: PUT successful[0m
+[0;33mW (109505) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (110505) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (111505) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (111505) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.4 %[0m
+[0;32mI (112165) RTDB: PUT successful[0m
+[0;33mW (112165) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (113905) RTDB: PUT successful[0m
+[0;33mW (113905) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (115745) RTDB: PUT successful[0m
+[0;33mW (115745) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (116745) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (117745) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (117745) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.4 %[0m
+[0;32mI (118315) RTDB: PUT successful[0m
+[0;33mW (118315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (119945) RTDB: PUT successful[0m
+[0;33mW (119945) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (121575) RTDB: PUT successful[0m
+[0;33mW (121585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (122585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (123585) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (123585) PLANT_MONITOR: Temp: 30.5 °C | Humidity: 47.4 %[0m
+[0;32mI (124245) RTDB: PUT successful[0m
+[0;33mW (124245) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (125885) RTDB: PUT successful[0m
+[0;33mW (125885) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (128545) RTDB: PUT successful[0m
+[0;33mW (128545) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (129545) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (130545) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (130545) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.4 %[0m
+[0;32mI (131205) RTDB: PUT successful[0m
+[0;33mW (131205) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (132855) RTDB: PUT successful[0m
+[0;33mW (132855) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (134485) RTDB: PUT successful[0m
+[0;33mW (134485) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (135485) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (136485) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (136485) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.4 %[0m
+[0;32mI (137155) RTDB: PUT successful[0m
+[0;33mW (137155) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (138785) RTDB: PUT successful[0m
+[0;33mW (138785) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (140425) RTDB: PUT successful[0m
+[0;33mW (140425) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (141425) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (142425) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (142425) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.4 %[0m
+[0;32mI (143085) RTDB: PUT successful[0m
+[0;33mW (143085) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (144725) RTDB: PUT successful[0m
+[0;33mW (144725) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (146365) RTDB: PUT successful[0m
+[0;33mW (146365) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (147365) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (148365) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (148365) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.6 %[0m
+[0;32mI (149225) RTDB: PUT successful[0m
+[0;33mW (149225) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (150665) RTDB: PUT successful[0m
+[0;33mW (150665) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (152305) RTDB: PUT successful[0m
+[0;33mW (152305) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (153305) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (154305) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (154305) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.6 %[0m
+[0;32mI (154965) RTDB: PUT successful[0m
+[0;33mW (154965) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (156595) RTDB: PUT successful[0m
+[0;33mW (156605) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (158245) RTDB: PUT successful[0m
+[0;33mW (158245) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (159245) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (160245) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (160245) PLANT_MONITOR: Temp: 30.4 °C | Humidity: 47.7 %[0m
+[0;32mI (160905) RTDB: PUT successful[0m
+[0;33mW (160905) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (162745) RTDB: PUT successful[0m
+[0;33mW (162745) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (164515) RTDB: PUT successful[0m
+[0;33mW (164525) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (165525) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (166525) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (166525) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.5 %[0m
+[0;32mI (167255) RTDB: PUT successful[0m
+[0;33mW (167255) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (168895) RTDB: PUT successful[0m
+[0;33mW (168895) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (170525) RTDB: PUT successful[0m
+[0;33mW (170525) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (171525) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (172525) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (172525) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (173395) RTDB: PUT successful[0m
+[0;33mW (173395) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (175035) RTDB: PUT successful[0m
+[0;33mW (175035) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (176675) RTDB: PUT successful[0m
+[0;33mW (176675) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (177675) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (178675) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (178675) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (179335) RTDB: PUT successful[0m
+[0;33mW (179335) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (180875) RTDB: PUT successful[0m
+[0;33mW (180875) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (182335) RTDB: PUT successful[0m
+[0;33mW (182335) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (183335) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (184335) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (184335) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (184875) RTDB: PUT successful[0m
+[0;33mW (184875) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (186505) RTDB: PUT successful[0m
+[0;33mW (186505) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (188145) RTDB: PUT successful[0m
+[0;33mW (188145) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (189145) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (190145) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (190145) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.5 %[0m
+[0;32mI (193165) RTDB: PUT successful[0m
+[0;33mW (193165) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (194695) RTDB: PUT successful[0m
+[0;33mW (194695) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (196335) RTDB: PUT successful[0m
+[0;33mW (196335) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (197335) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (198335) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (198335) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.6 %[0m
+[0;32mI (199205) RTDB: PUT successful[0m
+[0;33mW (199205) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (201455) RTDB: PUT successful[0m
+[0;33mW (201455) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (203095) RTDB: PUT successful[0m
+[0;33mW (203095) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (204095) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (205095) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (205095) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.5 %[0m
+[0;32mI (205755) RTDB: PUT successful[0m
+[0;33mW (205755) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (207395) RTDB: PUT successful[0m
+[0;33mW (207405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (209035) RTDB: PUT successful[0m
+[0;33mW (209045) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (210045) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (211045) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (211045) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.5 %[0m
+[0;32mI (211695) RTDB: PUT successful[0m
+[0;33mW (211695) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (213335) RTDB: PUT successful[0m
+[0;33mW (213335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (214975) RTDB: PUT successful[0m
+[0;33mW (214975) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (215975) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (216975) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (216975) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.5 %[0m
+[0;32mI (217635) RTDB: PUT successful[0m
+[0;33mW (217635) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (219275) RTDB: PUT successful[0m
+[0;33mW (219275) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (220915) RTDB: PUT successful[0m
+[0;33mW (220915) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (221915) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (222915) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (222915) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 48.0 %[0m
+[0;32mI (223575) RTDB: PUT successful[0m
+[0;33mW (223575) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (225215) RTDB: PUT successful[0m
+[0;33mW (225215) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (228385) RTDB: PUT successful[0m
+[0;33mW (228385) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (229385) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (230385) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (230385) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.7 %[0m
+[0;32mI (230945) RTDB: PUT successful[0m
+[0;33mW (230945) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (232585) RTDB: PUT successful[0m
+[0;33mW (232585) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (234225) RTDB: PUT successful[0m
+[0;33mW (234225) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (235225) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (236225) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (236225) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (236885) RTDB: PUT successful[0m
+[0;33mW (236885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (238525) RTDB: PUT successful[0m
+[0;33mW (238525) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (240165) RTDB: PUT successful[0m
+[0;33mW (240165) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (241165) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (242165) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (242165) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (242835) RTDB: PUT successful[0m
+[0;33mW (242835) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (244465) RTDB: PUT successful[0m
+[0;33mW (244465) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (246095) RTDB: PUT successful[0m
+[0;33mW (246095) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (247095) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (248095) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (248095) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.4 %[0m
+[0;32mI (248765) RTDB: PUT successful[0m
+[0;33mW (248765) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (250405) RTDB: PUT successful[0m
+[0;33mW (250405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (252035) RTDB: PUT successful[0m
+[0;33mW (252035) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (253035) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (254035) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (254035) PLANT_MONITOR: Temp: 30.3 °C | Humidity: 47.3 %[0m
+[0;32mI (254695) RTDB: PUT successful[0m
+[0;33mW (254705) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (256345) RTDB: PUT successful[0m
+[0;33mW (256345) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (257975) RTDB: PUT successful[0m
+[0;33mW (257975) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (258975) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (259975) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (259975) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.3 %[0m
+[0;32mI (260845) RTDB: PUT successful[0m
+[0;33mW (260845) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (262485) RTDB: PUT successful[0m
+[0;33mW (262485) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (264125) RTDB: PUT successful[0m
+[0;33mW (264125) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (265125) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (266125) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (266125) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.3 %[0m
+[0;32mI (266785) RTDB: PUT successful[0m
+[0;33mW (266785) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (268425) RTDB: PUT successful[0m
+[0;33mW (268425) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (270055) RTDB: PUT successful[0m
+[0;33mW (270055) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (271065) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (272065) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (272065) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.4 %[0m
+[0;32mI (272725) RTDB: PUT successful[0m
+[0;33mW (272725) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (274375) RTDB: PUT successful[0m
+[0;33mW (274375) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (276005) RTDB: PUT successful[0m
+[0;33mW (276005) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (277005) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (278005) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (278005) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.4 %[0m
+[0;32mI (278655) RTDB: PUT successful[0m
+[0;33mW (278665) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (281335) RTDB: PUT successful[0m
+[0;33mW (281335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (282965) RTDB: PUT successful[0m
+[0;33mW (282965) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (283965) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (284965) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (284965) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.4 %[0m
+[0;32mI (285635) RTDB: PUT successful[0m
+[0;33mW (285635) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (287265) RTDB: PUT successful[0m
+[0;33mW (287265) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (288905) RTDB: PUT successful[0m
+[0;33mW (288905) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (289905) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (290905) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (290905) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 47.4 %[0m
+[0;32mI (291775) RTDB: PUT successful[0m
+[0;33mW (291775) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (293405) RTDB: PUT successful[0m
+[0;33mW (293405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (295055) RTDB: PUT successful[0m
+[0;33mW (295055) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (296055) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (297055) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (297055) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.4 %[0m
+[0;32mI (297915) RTDB: PUT successful[0m
+[0;33mW (297915) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (299765) RTDB: PUT successful[0m
+[0;33mW (299765) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (301495) RTDB: PUT successful[0m
+[0;33mW (301495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (302495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (303495) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (303495) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.4 %[0m
+[0;32mI (304475) RTDB: PUT successful[0m
+[0;33mW (304475) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (306105) RTDB: PUT successful[0m
+[0;33mW (306105) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (307745) RTDB: PUT successful[0m
+[0;33mW (307745) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (308745) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (309745) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (309745) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.4 %[0m
+[0;32mI (310415) RTDB: PUT successful[0m
+[0;33mW (310415) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (312255) RTDB: PUT successful[0m
+[0;33mW (312255) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (313895) RTDB: PUT successful[0m
+[0;33mW (313895) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (314895) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (315895) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (315895) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.4 %[0m
+[0;32mI (316555) RTDB: PUT successful[0m
+[0;33mW (316555) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (318195) RTDB: PUT successful[0m
+[0;33mW (318195) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (319825) RTDB: PUT successful[0m
+[0;33mW (319825) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (320825) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (321825) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (321825) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.5 %[0m
+[0;32mI (322485) RTDB: PUT successful[0m
+[0;33mW (322485) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (324335) RTDB: PUT successful[0m
+[0;33mW (324335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (325965) RTDB: PUT successful[0m
+[0;33mW (325975) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (326975) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (327975) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (327975) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.5 %[0m
+[0;32mI (328845) RTDB: PUT successful[0m
+[0;33mW (328845) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (330475) RTDB: PUT successful[0m
+[0;33mW (330475) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (332325) RTDB: PUT successful[0m
+[0;33mW (332335) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (333335) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (334335) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (334335) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 47.5 %[0m
+[0;32mI (334985) RTDB: PUT successful[0m
+[0;33mW (334985) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (336625) RTDB: PUT successful[0m
+[0;33mW (336625) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (338255) RTDB: PUT successful[0m
+[0;33mW (338255) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (339255) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (340255) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (340255) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.5 %[0m
+[0;32mI (340925) RTDB: PUT successful[0m
+[0;33mW (340925) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (342565) RTDB: PUT successful[0m
+[0;33mW (342565) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (344195) RTDB: PUT successful[0m
+[0;33mW (344195) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (345195) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (346195) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (346195) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.5 %[0m
+[0;32mI (346855) RTDB: PUT successful[0m
+[0;33mW (346855) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (348505) RTDB: PUT successful[0m
+[0;33mW (348505) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (350145) RTDB: PUT successful[0m
+[0;33mW (350145) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (351145) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (352145) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (352145) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.5 %[0m
+[0;32mI (353015) RTDB: PUT successful[0m
+[0;33mW (353015) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (354645) RTDB: PUT successful[0m
+[0;33mW (354645) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (356285) RTDB: PUT successful[0m
+[0;33mW (356285) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (357285) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (358285) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (358285) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (358885) RTDB: PUT successful[0m
+[0;33mW (358885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (360595) RTDB: PUT successful[0m
+[0;33mW (360595) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (362225) RTDB: PUT successful[0m
+[0;33mW (362225) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (363225) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (364225) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (364225) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (364885) RTDB: PUT successful[0m
+[0;33mW (364885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (366525) RTDB: PUT successful[0m
+[0;33mW (366525) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (368165) RTDB: PUT successful[0m
+[0;33mW (368175) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (369175) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (370175) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (370175) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (370815) RTDB: PUT successful[0m
+[0;33mW (370825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (372675) RTDB: PUT successful[0m
+[0;33mW (372675) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (374515) RTDB: PUT successful[0m
+[0;33mW (374515) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (375515) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (376515) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (376515) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (377175) RTDB: PUT successful[0m
+[0;33mW (377175) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (378815) RTDB: PUT successful[0m
+[0;33mW (378815) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (380445) RTDB: PUT successful[0m
+[0;33mW (380445) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (381445) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (382445) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (382445) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (383105) RTDB: PUT successful[0m
+[0;33mW (383115) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (384745) RTDB: PUT successful[0m
+[0;33mW (384745) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (386385) RTDB: PUT successful[0m
+[0;33mW (386385) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (387385) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (388385) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (388385) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (389055) RTDB: PUT successful[0m
+[0;33mW (389055) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (390695) RTDB: PUT successful[0m
+[0;33mW (390695) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (392325) RTDB: PUT successful[0m
+[0;33mW (392325) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (393325) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (394325) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (394325) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (394985) RTDB: PUT successful[0m
+[0;33mW (394985) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (396835) RTDB: PUT successful[0m
+[0;33mW (396835) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (398475) RTDB: PUT successful[0m
+[0;33mW (398475) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (399475) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (400475) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (400475) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (401135) RTDB: PUT successful[0m
+[0;33mW (401135) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (402775) RTDB: PUT successful[0m
+[0;33mW (402775) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (404415) RTDB: PUT successful[0m
+[0;33mW (404415) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (405415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (406415) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (406415) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (407065) RTDB: PUT successful[0m
+[0;33mW (407075) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (410145) RTDB: PUT successful[0m
+[0;33mW (410145) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (411885) RTDB: PUT successful[0m
+[0;33mW (411885) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (412885) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (413885) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (413885) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (414455) RTDB: PUT successful[0m
+[0;33mW (414455) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (416085) RTDB: PUT successful[0m
+[0;33mW (416085) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (417725) RTDB: PUT successful[0m
+[0;33mW (417725) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (418725) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (419725) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (419725) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (420595) RTDB: PUT successful[0m
+[0;33mW (420595) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (422225) RTDB: PUT successful[0m
+[0;33mW (422225) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (423865) RTDB: PUT successful[0m
+[0;33mW (423865) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (424865) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (425865) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (425865) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (426535) RTDB: PUT successful[0m
+[0;33mW (426535) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (428165) RTDB: PUT successful[0m
+[0;33mW (428165) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (429805) RTDB: PUT successful[0m
+[0;33mW (429805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (430815) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (431815) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (431815) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (432465) RTDB: PUT successful[0m
+[0;33mW (432465) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (434105) RTDB: PUT successful[0m
+[0;33mW (434105) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (435745) RTDB: PUT successful[0m
+[0;33mW (435745) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (436745) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (437745) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (437745) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (438405) RTDB: PUT successful[0m
+[0;33mW (438405) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (440255) RTDB: PUT successful[0m
+[0;33mW (440255) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (441895) RTDB: PUT successful[0m
+[0;33mW (441895) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (442895) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (443895) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (443895) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.6 %[0m
+[0;32mI (444965) RTDB: PUT successful[0m
+[0;33mW (444965) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (446805) RTDB: PUT successful[0m
+[0;33mW (446805) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (448655) RTDB: PUT successful[0m
+[0;33mW (448655) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (449655) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (450655) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (450655) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.7 %[0m
+[0;32mI (451725) RTDB: PUT successful[0m
+[0;33mW (451725) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (453575) RTDB: PUT successful[0m
+[0;33mW (453575) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (455405) RTDB: PUT successful[0m
+[0;33mW (455405) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (456415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (457415) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (457415) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 47.8 %[0m
+[0;32mI (458485) RTDB: PUT successful[0m
+[0;33mW (458485) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (460115) RTDB: PUT successful[0m
+[0;33mW (460115) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (461755) RTDB: PUT successful[0m
+[0;33mW (461755) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (462755) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (463755) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (463755) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 48.0 %[0m
+[0;32mI (464425) RTDB: PUT successful[0m
+[0;33mW (464425) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (466055) RTDB: PUT successful[0m
+[0;33mW (466055) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (467695) RTDB: PUT successful[0m
+[0;33mW (467695) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (468695) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (469695) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (469695) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 59.5 %[0m
+[0;32mI (470355) RTDB: PUT successful[0m
+[0;33mW (470355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (472005) RTDB: PUT successful[0m
+[0;33mW (472005) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (473635) RTDB: PUT successful[0m
+[0;33mW (473635) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (474635) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (475635) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (475635) PLANT_MONITOR: Temp: 30.2 °C | Humidity: 53.2 %[0m
+[0;32mI (476295) RTDB: PUT successful[0m
+[0;33mW (476295) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (477935) RTDB: PUT successful[0m
+[0;33mW (477935) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (479575) RTDB: PUT successful[0m
+[0;33mW (479575) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (480575) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (481575) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (481575) PLANT_MONITOR: Temp: 30.1 °C | Humidity: 50.4 %[0m
+[0;32mI (482235) RTDB: PUT successful[0m
+[0;33mW (482235) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (483875) RTDB: PUT successful[0m
+[0;33mW (483875) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (485515) RTDB: PUT successful[0m
+[0;33mW (485515) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (486515) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (487515) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (487515) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 49.3 %[0m
+[0;32mI (488185) RTDB: PUT successful[0m
+[0;33mW (488185) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (490025) RTDB: PUT successful[0m
+[0;33mW (490025) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (491655) RTDB: PUT successful[0m
+[0;33mW (491655) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (492655) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (493655) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (493655) PLANT_MONITOR: Temp: 30.0 °C | Humidity: 48.7 %[0m
+[0;32mI (494315) RTDB: PUT successful[0m
+[0;33mW (494315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (496165) RTDB: PUT successful[0m
+[0;33mW (496165) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (497805) RTDB: PUT successful[0m
+[0;33mW (497805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (498805) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (499805) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (499805) PLANT_MONITOR: Temp: 29.8 °C | Humidity: 48.5 %[0m
+[0;32mI (500475) RTDB: PUT successful[0m
+[0;33mW (500475) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (502095) RTDB: PUT successful[0m
+[0;33mW (502095) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (503945) RTDB: PUT successful[0m
+[0;33mW (503945) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (504945) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (505945) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (505945) PLANT_MONITOR: Temp: 29.7 °C | Humidity: 48.5 %[0m
+[0;32mI (506605) RTDB: PUT successful[0m
+[0;33mW (506605) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (508245) RTDB: PUT successful[0m
+[0;33mW (508255) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (510495) RTDB: PUT successful[0m
+[0;33mW (510495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (511505) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (512505) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (512505) PLANT_MONITOR: Temp: 29.5 °C | Humidity: 48.4 %[0m
+[0;32mI (513155) RTDB: PUT successful[0m
+[0;33mW (513165) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (514795) RTDB: PUT successful[0m
+[0;33mW (514805) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (516435) RTDB: PUT successful[0m
+[0;33mW (516435) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (517435) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (518435) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (518435) PLANT_MONITOR: Temp: 29.5 °C | Humidity: 48.5 %[0m
+[0;32mI (519095) RTDB: PUT successful[0m
+[0;33mW (519095) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (520745) RTDB: PUT successful[0m
+[0;33mW (520745) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (522585) RTDB: PUT successful[0m
+[0;33mW (522585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (523585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (524585) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (524585) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 48.7 %[0m
+[0;32mI (525445) RTDB: PUT successful[0m
+[0;33mW (525445) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (527295) RTDB: PUT successful[0m
+[0;33mW (527295) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (528965) RTDB: PUT successful[0m
+[0;33mW (528965) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (529965) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (530965) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;31mE (530965) DHT: Sensor Timeout
+[0m
+[0;32mI (530965) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 48.7 %[0m
+[0;32mI (531595) RTDB: PUT successful[0m
+[0;33mW (531595) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (533225) RTDB: PUT successful[0m
+[0;33mW (533225) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (534865) RTDB: PUT successful[0m
+[0;33mW (534875) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (535875) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (536875) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (536875) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.2 %[0m
+[0;32mI (537535) RTDB: PUT successful[0m
+[0;33mW (537535) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (539165) RTDB: PUT successful[0m
+[0;33mW (539165) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (541635) RTDB: PUT successful[0m
+[0;33mW (541635) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (542635) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (543635) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (543635) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.8 %[0m
+[0;32mI (544495) RTDB: PUT successful[0m
+[0;33mW (544495) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (546135) RTDB: PUT successful[0m
+[0;33mW (546135) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (547775) RTDB: PUT successful[0m
+[0;33mW (547775) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (548775) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (549775) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (549775) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.6 %[0m
+[0;32mI (550435) RTDB: PUT successful[0m
+[0;33mW (550435) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (552065) RTDB: PUT successful[0m
+[0;33mW (552075) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (553715) RTDB: PUT successful[0m
+[0;33mW (553715) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (554715) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (555715) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (555715) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.3 %[0m
+[0;32mI (556375) RTDB: PUT successful[0m
+[0;33mW (556375) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (558015) RTDB: PUT successful[0m
+[0;33mW (558015) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (559855) RTDB: PUT successful[0m
+[0;33mW (559855) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (560855) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (561855) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (561855) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 49.4 %[0m
+[0;32mI (562515) RTDB: PUT successful[0m
+[0;33mW (562515) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (564365) RTDB: PUT successful[0m
+[0;33mW (564365) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (566005) RTDB: PUT successful[0m
+[0;33mW (566005) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (567005) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (568005) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (568005) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 49.3 %[0m
+[0;32mI (568865) RTDB: PUT successful[0m
+[0;33mW (568865) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (570715) RTDB: PUT successful[0m
+[0;33mW (570715) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (572345) RTDB: PUT successful[0m
+[0;33mW (572345) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (573345) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (574345) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (574345) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 49.2 %[0m
+[0;32mI (575215) RTDB: PUT successful[0m
+[0;33mW (575215) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (576855) RTDB: PUT successful[0m
+[0;33mW (576855) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (578495) RTDB: PUT successful[0m
+[0;33mW (578495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (579495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (580495) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (580495) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.3 %[0m
+[0;32mI (581155) RTDB: PUT successful[0m
+[0;33mW (581155) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (582785) RTDB: PUT successful[0m
+[0;33mW (582785) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (584435) RTDB: PUT successful[0m
+[0;33mW (584435) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (585435) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (586435) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (586435) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (587305) RTDB: PUT successful[0m
+[0;33mW (587305) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (589135) RTDB: PUT successful[0m
+[0;33mW (589135) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (590985) RTDB: PUT successful[0m
+[0;33mW (590985) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (591985) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (592985) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (592985) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.4 %[0m
+[0;32mI (593855) RTDB: PUT successful[0m
+[0;33mW (593855) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (595695) RTDB: PUT successful[0m
+[0;33mW (595695) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (597545) RTDB: PUT successful[0m
+[0;33mW (597545) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (598545) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (599545) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (599545) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.6 %[0m
+[0;32mI (600195) RTDB: PUT successful[0m
+[0;33mW (600195) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (601835) RTDB: PUT successful[0m
+[0;33mW (601845) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (603475) RTDB: PUT successful[0m
+[0;33mW (603475) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (604475) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (605475) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (605475) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.6 %[0m
+[0;32mI (606135) RTDB: PUT successful[0m
+[0;33mW (606135) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (607775) RTDB: PUT successful[0m
+[0;33mW (607775) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (609415) RTDB: PUT successful[0m
+[0;33mW (609415) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (610415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (611415) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (611415) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 50.3 %[0m
+[0;32mI (612085) RTDB: PUT successful[0m
+[0;33mW (612085) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (613715) RTDB: PUT successful[0m
+[0;33mW (613715) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (615355) RTDB: PUT successful[0m
+[0;33mW (615355) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (616355) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (617355) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (617355) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 50.0 %[0m
+[0;32mI (618025) RTDB: PUT successful[0m
+[0;33mW (618025) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (619665) RTDB: PUT successful[0m
+[0;33mW (619665) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (621325) RTDB: PUT successful[0m
+[0;33mW (621325) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (622325) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (623325) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;31mE (623325) DHT: Sensor Timeout
+[0m
+[0;32mI (623325) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 50.0 %[0m
+[0;32mI (623955) RTDB: PUT successful[0m
+[0;33mW (623955) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (625595) RTDB: PUT successful[0m
+[0;33mW (625595) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (627235) RTDB: PUT successful[0m
+[0;33mW (627235) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (628235) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (629235) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (629235) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.4 %[0m
+[0;32mI (630105) RTDB: PUT successful[0m
+[0;33mW (630105) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (631735) RTDB: PUT successful[0m
+[0;33mW (631735) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (633585) RTDB: PUT successful[0m
+[0;33mW (633585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (634585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (635585) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (635585) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (636355) RTDB: PUT successful[0m
+[0;33mW (636355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (638295) RTDB: PUT successful[0m
+[0;33mW (638295) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (640135) RTDB: PUT successful[0m
+[0;33mW (640135) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (641135) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (642135) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (642135) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (643005) RTDB: PUT successful[0m
+[0;33mW (643005) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (644645) RTDB: PUT successful[0m
+[0;33mW (644645) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (646485) RTDB: PUT successful[0m
+[0;33mW (646495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (647495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (648495) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (648495) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.3 %[0m
+[0;32mI (649355) RTDB: PUT successful[0m
+[0;33mW (649355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (651195) RTDB: PUT successful[0m
+[0;33mW (651205) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (653045) RTDB: PUT successful[0m
+[0;33mW (653045) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (654045) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (655045) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (655045) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.3 %[0m
+[0;32mI (655695) RTDB: PUT successful[0m
+[0;33mW (655695) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (658565) RTDB: PUT successful[0m
+[0;33mW (658565) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (660415) RTDB: PUT successful[0m
+[0;33mW (660415) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (661415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (662415) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (662415) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.4 %[0m
+[0;32mI (663695) RTDB: PUT successful[0m
+[0;33mW (663695) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (665325) RTDB: PUT successful[0m
+[0;33mW (665325) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (667025) RTDB: PUT successful[0m
+[0;33mW (667025) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (668025) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (669025) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (669025) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.3 %[0m
+[0;32mI (670035) RTDB: PUT successful[0m
+[0;33mW (670035) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (671875) RTDB: PUT successful[0m
+[0;33mW (671875) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (673515) RTDB: PUT successful[0m
+[0;33mW (673515) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (674515) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (675515) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (675515) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.3 %[0m
+[0;32mI (676185) RTDB: PUT successful[0m
+[0;33mW (676185) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (677745) RTDB: PUT successful[0m
+[0;33mW (677745) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (679465) RTDB: PUT successful[0m
+[0;33mW (679465) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (680465) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (681465) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (681465) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.4 %[0m
+[0;32mI (682325) RTDB: PUT successful[0m
+[0;33mW (682325) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (684275) RTDB: PUT successful[0m
+[0;33mW (684275) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (686215) RTDB: PUT successful[0m
+[0;33mW (686225) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (687225) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (688225) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (688225) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.5 %[0m
+[0;32mI (689085) RTDB: PUT successful[0m
+[0;33mW (689095) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (690925) RTDB: PUT successful[0m
+[0;33mW (690925) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (692765) RTDB: PUT successful[0m
+[0;33mW (692775) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (693775) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (694775) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (694775) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (695635) RTDB: PUT successful[0m
+[0;33mW (695635) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (697485) RTDB: PUT successful[0m
+[0;33mW (697485) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (699325) RTDB: PUT successful[0m
+[0;33mW (699325) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (700325) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (701325) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (701325) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (701985) RTDB: PUT successful[0m
+[0;33mW (701985) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (703625) RTDB: PUT successful[0m
+[0;33mW (703625) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (705265) RTDB: PUT successful[0m
+[0;33mW (705265) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (706265) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (707265) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (707265) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.4 %[0m
+[0;32mI (707925) RTDB: PUT successful[0m
+[0;33mW (707925) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (709765) RTDB: PUT successful[0m
+[0;33mW (709765) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (711605) RTDB: PUT successful[0m
+[0;33mW (711615) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (712615) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (713615) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (713615) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (714695) RTDB: PUT successful[0m
+[0;33mW (714695) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (716525) RTDB: PUT successful[0m
+[0;33mW (716525) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (718165) RTDB: PUT successful[0m
+[0;33mW (718165) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (719165) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (720165) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (720165) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (720825) RTDB: PUT successful[0m
+[0;33mW (720825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (722475) RTDB: PUT successful[0m
+[0;33mW (722475) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (724105) RTDB: PUT successful[0m
+[0;33mW (724105) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (725105) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (726105) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (726105) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.5 %[0m
+[0;32mI (726765) RTDB: PUT successful[0m
+[0;33mW (726765) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (728405) RTDB: PUT successful[0m
+[0;33mW (728405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (730045) RTDB: PUT successful[0m
+[0;33mW (730045) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (731045) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (732045) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (732045) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (732915) RTDB: PUT successful[0m
+[0;33mW (732915) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (734755) RTDB: PUT successful[0m
+[0;33mW (734755) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (736595) RTDB: PUT successful[0m
+[0;33mW (736595) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (737595) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (738595) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (738595) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.7 %[0m
+[0;32mI (739465) RTDB: PUT successful[0m
+[0;33mW (739465) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (741305) RTDB: PUT successful[0m
+[0;33mW (741305) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (742945) RTDB: PUT successful[0m
+[0;33mW (742945) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (743945) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (744945) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (744945) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.5 %[0m
+[0;32mI (745855) RTDB: PUT successful[0m
+[0;33mW (745855) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (747445) RTDB: PUT successful[0m
+[0;33mW (747445) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (749295) RTDB: PUT successful[0m
+[0;33mW (749295) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (750295) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (751295) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (751295) PLANT_MONITOR: Temp: 28.7 °C | Humidity: 49.5 %[0m
+[0;32mI (752165) RTDB: PUT successful[0m
+[0;33mW (752165) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (753795) RTDB: PUT successful[0m
+[0;33mW (753795) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (755445) RTDB: PUT successful[0m
+[0;33mW (755445) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (756445) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (757445) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (757445) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.7 %[0m
+[0;32mI (758305) RTDB: PUT successful[0m
+[0;33mW (758305) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (759945) RTDB: PUT successful[0m
+[0;33mW (759945) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (761575) RTDB: PUT successful[0m
+[0;33mW (761575) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (762575) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (763575) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (763575) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.6 %[0m
+[0;32mI (765265) RTDB: PUT successful[0m
+[0;33mW (765265) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (766915) RTDB: PUT successful[0m
+[0;33mW (766915) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (768545) RTDB: PUT successful[0m
+[0;33mW (768545) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (769545) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (770545) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (770545) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.6 %[0m
+[0;32mI (771205) RTDB: PUT successful[0m
+[0;33mW (771205) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (772845) RTDB: PUT successful[0m
+[0;33mW (772845) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (774495) RTDB: PUT successful[0m
+[0;33mW (774495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (775495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (776495) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (776495) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.5 %[0m
+[0;32mI (777155) RTDB: PUT successful[0m
+[0;33mW (777155) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (778785) RTDB: PUT successful[0m
+[0;33mW (778785) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (780425) RTDB: PUT successful[0m
+[0;33mW (780425) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (781425) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (782425) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (782425) PLANT_MONITOR: Temp: 28.8 °C | Humidity: 49.4 %[0m
+[0;32mI (783295) RTDB: PUT successful[0m
+[0;33mW (783295) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (784925) RTDB: PUT successful[0m
+[0;33mW (784925) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (786565) RTDB: PUT successful[0m
+[0;33mW (786565) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (787565) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (788565) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (788565) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.7 %[0m
+[0;32mI (789225) RTDB: PUT successful[0m
+[0;33mW (789225) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (791075) RTDB: PUT successful[0m
+[0;33mW (791075) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (792715) RTDB: PUT successful[0m
+[0;33mW (792715) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (793715) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (794715) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (794715) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.8 %[0m
+[0;32mI (795385) RTDB: PUT successful[0m
+[0;33mW (795385) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (797015) RTDB: PUT successful[0m
+[0;33mW (797015) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (798655) RTDB: PUT successful[0m
+[0;33mW (798655) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (799655) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (800655) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (800655) PLANT_MONITOR: Temp: 28.9 °C | Humidity: 49.8 %[0m
+[0;32mI (801305) RTDB: PUT successful[0m
+[0;33mW (801315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (802955) RTDB: PUT successful[0m
+[0;33mW (802955) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (804585) RTDB: PUT successful[0m
+[0;33mW (804585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (805585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (806585) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (806585) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.5 %[0m
+[0;32mI (807245) RTDB: PUT successful[0m
+[0;33mW (807245) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (808895) RTDB: PUT successful[0m
+[0;33mW (808895) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (810535) RTDB: PUT successful[0m
+[0;33mW (810535) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (811535) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (812535) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (812535) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.4 %[0m
+[0;32mI (813215) RTDB: PUT successful[0m
+[0;33mW (813215) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (814825) RTDB: PUT successful[0m
+[0;33mW (814825) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (816475) RTDB: PUT successful[0m
+[0;33mW (816475) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (817475) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (818475) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (818475) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.3 %[0m
+[0;32mI (819125) RTDB: PUT successful[0m
+[0;33mW (819125) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (820785) RTDB: PUT successful[0m
+[0;33mW (820785) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (822605) RTDB: PUT successful[0m
+[0;33mW (822605) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (823605) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (824605) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (824605) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (825275) RTDB: PUT successful[0m
+[0;33mW (825275) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (826905) RTDB: PUT successful[0m
+[0;33mW (826905) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (828565) RTDB: PUT successful[0m
+[0;33mW (828565) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (829565) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (830565) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (830565) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (831215) RTDB: PUT successful[0m
+[0;33mW (831215) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (832855) RTDB: PUT successful[0m
+[0;33mW (832855) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (834485) RTDB: PUT successful[0m
+[0;33mW (834485) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (835485) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (836485) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (836485) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.3 %[0m
+[0;32mI (837355) RTDB: PUT successful[0m
+[0;33mW (837355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (839405) RTDB: PUT successful[0m
+[0;33mW (839405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (841255) RTDB: PUT successful[0m
+[0;33mW (841255) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (842255) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (843255) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (843255) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (844115) RTDB: PUT successful[0m
+[0;33mW (844115) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (845955) RTDB: PUT successful[0m
+[0;33mW (845955) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (847595) RTDB: PUT successful[0m
+[0;33mW (847595) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (848595) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (849595) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (849595) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.2 %[0m
+[0;32mI (850255) RTDB: PUT successful[0m
+[0;33mW (850255) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (851895) RTDB: PUT successful[0m
+[0;33mW (851895) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (853535) RTDB: PUT successful[0m
+[0;33mW (853535) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (854535) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (855535) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (855535) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.1 %[0m
+[0;32mI (856195) RTDB: PUT successful[0m
+[0;33mW (856195) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (857845) RTDB: PUT successful[0m
+[0;33mW (857845) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (859475) RTDB: PUT successful[0m
+[0;33mW (859475) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (860475) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (861475) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (861475) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.5 %[0m
+[0;32mI (862135) RTDB: PUT successful[0m
+[0;33mW (862145) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (863775) RTDB: PUT successful[0m
+[0;33mW (863775) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (865415) RTDB: PUT successful[0m
+[0;33mW (865415) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (866415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (867415) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (867415) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.4 %[0m
+[0;32mI (868075) RTDB: PUT successful[0m
+[0;33mW (868075) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (869715) RTDB: PUT successful[0m
+[0;33mW (869715) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (871355) RTDB: PUT successful[0m
+[0;33mW (871355) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (872355) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (873355) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (873355) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.3 %[0m
+[0;32mI (874025) RTDB: PUT successful[0m
+[0;33mW (874025) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (875655) RTDB: PUT successful[0m
+[0;33mW (875655) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (877295) RTDB: PUT successful[0m
+[0;33mW (877295) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (878295) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (879295) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (879295) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.1 %[0m
+[0;32mI (879955) RTDB: PUT successful[0m
+[0;33mW (879955) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (881595) RTDB: PUT successful[0m
+[0;33mW (881595) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (883435) RTDB: PUT successful[0m
+[0;33mW (883435) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (884435) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (885435) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (885435) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.0 %[0m
+[0;32mI (886315) RTDB: PUT successful[0m
+[0;33mW (886315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (888145) RTDB: PUT successful[0m
+[0;33mW (888145) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (890805) RTDB: PUT successful[0m
+[0;33mW (890805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (891805) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (892805) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (892805) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.1 %[0m
+[0;32mI (893685) RTDB: PUT successful[0m
+[0;33mW (893685) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (895325) RTDB: PUT successful[0m
+[0;33mW (895325) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (896965) RTDB: PUT successful[0m
+[0;33mW (896965) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (897965) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (898965) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (898965) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.1 %[0m
+[0;32mI (899825) RTDB: PUT successful[0m
+[0;33mW (899825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (901465) RTDB: PUT successful[0m
+[0;33mW (901465) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (903095) RTDB: PUT successful[0m
+[0;33mW (903095) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (904095) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (905095) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (905095) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 49.0 %[0m
+[0;32mI (905755) RTDB: PUT successful[0m
+[0;33mW (905755) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (907815) RTDB: PUT successful[0m
+[0;33mW (907815) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (909455) RTDB: PUT successful[0m
+[0;33mW (909455) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (910455) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (911455) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (911455) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 49.0 %[0m
+[0;32mI (912315) RTDB: PUT successful[0m
+[0;33mW (912315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (914975) RTDB: PUT successful[0m
+[0;33mW (914975) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (916615) RTDB: PUT successful[0m
+[0;33mW (916615) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (917615) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (918615) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (918615) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.9 %[0m
+[0;32mI (919285) RTDB: PUT successful[0m
+[0;33mW (919285) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (920915) RTDB: PUT successful[0m
+[0;33mW (920915) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (922585) RTDB: PUT successful[0m
+[0;33mW (922585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (923585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (924585) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;31mE (924585) DHT: Sensor Timeout
+[0m
+[0;32mI (924585) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.9 %[0m
+[0;32mI (925215) RTDB: PUT successful[0m
+[0;33mW (925215) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (927065) RTDB: PUT successful[0m
+[0;33mW (927065) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (928705) RTDB: PUT successful[0m
+[0;33mW (928705) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (929705) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (930705) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (930705) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.9 %[0m
+[0;32mI (931365) RTDB: PUT successful[0m
+[0;33mW (931365) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (932995) RTDB: PUT successful[0m
+[0;33mW (932995) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (934645) RTDB: PUT successful[0m
+[0;33mW (934645) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (935645) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (936645) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (936645) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.9 %[0m
+[0;32mI (937295) RTDB: PUT successful[0m
+[0;33mW (937295) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (938945) RTDB: PUT successful[0m
+[0;33mW (938945) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (940575) RTDB: PUT successful[0m
+[0;33mW (940575) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (941575) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (942575) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (942575) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.9 %[0m
+[0;32mI (943435) RTDB: PUT successful[0m
+[0;33mW (943445) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (945085) RTDB: PUT successful[0m
+[0;33mW (945085) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (946925) RTDB: PUT successful[0m
+[0;33mW (946925) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (947925) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (948925) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (948925) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.8 %[0m
+[0;32mI (949795) RTDB: PUT successful[0m
+[0;33mW (949795) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (951445) RTDB: PUT successful[0m
+[0;33mW (951445) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (953275) RTDB: PUT successful[0m
+[0;33mW (953275) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (954275) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (955275) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (955275) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.8 %[0m
+[0;32mI (955935) RTDB: PUT successful[0m
+[0;33mW (955935) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (957575) RTDB: PUT successful[0m
+[0;33mW (957575) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (959215) RTDB: PUT successful[0m
+[0;33mW (959215) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (960215) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (961215) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (961215) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (961885) RTDB: PUT successful[0m
+[0;33mW (961885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (964335) RTDB: PUT successful[0m
+[0;33mW (964335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (965975) RTDB: PUT successful[0m
+[0;33mW (965975) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (966975) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (967975) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (967975) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.7 %[0m
+[0;32mI (968635) RTDB: PUT successful[0m
+[0;33mW (968635) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (970215) RTDB: PUT successful[0m
+[0;33mW (970215) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (971915) RTDB: PUT successful[0m
+[0;33mW (971915) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (972915) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (973915) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (973915) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (974575) RTDB: PUT successful[0m
+[0;33mW (974575) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (976005) RTDB: PUT successful[0m
+[0;33mW (976005) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (977645) RTDB: PUT successful[0m
+[0;33mW (977645) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (978645) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (979645) PLANT_MONITOR: Soil moisture raw: 0[0m
+[0;32mI (979645) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (980305) RTDB: PUT successful[0m
+[0;33mW (980305) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (981945) RTDB: PUT successful[0m
+[0;33mW (981945) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (983785) RTDB: PUT successful[0m
+[0;33mW (983785) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (984785) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (985785) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (985785) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.7 %[0m
+[0;32mI (986455) RTDB: PUT successful[0m
+[0;33mW (986455) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (988295) RTDB: PUT successful[0m
+[0;33mW (988295) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (990145) RTDB: PUT successful[0m
+[0;33mW (990145) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (991145) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (992145) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (992145) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.7 %[0m
+[0;32mI (993005) RTDB: PUT successful[0m
+[0;33mW (993005) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (994645) RTDB: PUT successful[0m
+[0;33mW (994645) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (996485) RTDB: PUT successful[0m
+[0;33mW (996485) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (997485) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (998485) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (998485) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (999355) RTDB: PUT successful[0m
+[0;33mW (999355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1000995) RTDB: PUT successful[0m
+[0;33mW (1000995) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1002845) RTDB: PUT successful[0m
+[0;33mW (1002845) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1003845) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1004845) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1004845) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.9 %[0m
+[0;32mI (1005505) RTDB: PUT successful[0m
+[0;33mW (1005505) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1007135) RTDB: PUT successful[0m
+[0;33mW (1007135) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1008775) RTDB: PUT successful[0m
+[0;33mW (1008775) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1009775) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1010775) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1010775) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.0 %[0m
+[0;32mI (1011645) RTDB: PUT successful[0m
+[0;33mW (1011645) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1013495) RTDB: PUT successful[0m
+[0;33mW (1013495) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1016765) RTDB: PUT successful[0m
+[0;33mW (1016765) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1017765) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1018765) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1018765) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1019625) RTDB: PUT successful[0m
+[0;33mW (1019625) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1021475) RTDB: PUT successful[0m
+[0;33mW (1021475) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1023105) RTDB: PUT successful[0m
+[0;33mW (1023105) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1024105) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1025105) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1025105) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1025975) RTDB: PUT successful[0m
+[0;33mW (1025975) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1027825) RTDB: PUT successful[0m
+[0;33mW (1027825) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1029465) RTDB: PUT successful[0m
+[0;33mW (1029465) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1030465) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1031465) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1031465) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.7 %[0m
+[0;32mI (1032115) RTDB: PUT successful[0m
+[0;33mW (1032115) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1033765) RTDB: PUT successful[0m
+[0;33mW (1033765) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1035405) RTDB: PUT successful[0m
+[0;33mW (1035405) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1036405) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1037405) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1037405) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.6 %[0m
+[0;32mI (1038065) RTDB: PUT successful[0m
+[0;33mW (1038065) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1039905) RTDB: PUT successful[0m
+[0;33mW (1039905) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1041745) RTDB: PUT successful[0m
+[0;33mW (1041745) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1042745) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1043745) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1043745) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.6 %[0m
+[0;32mI (1044615) RTDB: PUT successful[0m
+[0;33mW (1044615) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1046255) RTDB: PUT successful[0m
+[0;33mW (1046255) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1048095) RTDB: PUT successful[0m
+[0;33mW (1048095) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1049095) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1050095) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1050095) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.0 %[0m
+[0;32mI (1050965) RTDB: PUT successful[0m
+[0;33mW (1050965) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1052805) RTDB: PUT successful[0m
+[0;33mW (1052805) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1054655) RTDB: PUT successful[0m
+[0;33mW (1054655) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1055655) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1056655) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1056655) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (1057525) RTDB: PUT successful[0m
+[0;33mW (1057525) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1059365) RTDB: PUT successful[0m
+[0;33mW (1059365) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1060995) RTDB: PUT successful[0m
+[0;33mW (1060995) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1061995) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1062995) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1062995) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.7 %[0m
+[0;32mI (1063665) RTDB: PUT successful[0m
+[0;33mW (1063665) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1065335) RTDB: PUT successful[0m
+[0;33mW (1065335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1066935) RTDB: PUT successful[0m
+[0;33mW (1066935) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1067935) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1068935) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1068935) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (1069805) RTDB: PUT successful[0m
+[0;33mW (1069805) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1071455) RTDB: PUT successful[0m
+[0;33mW (1071455) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1073085) RTDB: PUT successful[0m
+[0;33mW (1073085) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1074085) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1075085) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1075085) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (1075955) RTDB: PUT successful[0m
+[0;33mW (1075955) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1077585) RTDB: PUT successful[0m
+[0;33mW (1077585) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1079235) RTDB: PUT successful[0m
+[0;33mW (1079235) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1080235) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1081235) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1081235) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.9 %[0m
+[0;32mI (1082095) RTDB: PUT successful[0m
+[0;33mW (1082095) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1083735) RTDB: PUT successful[0m
+[0;33mW (1083735) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1085365) RTDB: PUT successful[0m
+[0;33mW (1085365) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1086365) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1087365) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1087365) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.9 %[0m
+[0;32mI (1088035) RTDB: PUT successful[0m
+[0;33mW (1088035) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1089665) RTDB: PUT successful[0m
+[0;33mW (1089665) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1091315) RTDB: PUT successful[0m
+[0;33mW (1091315) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1092315) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1093315) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1093315) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.4 %[0m
+[0;32mI (1093975) RTDB: PUT successful[0m
+[0;33mW (1093975) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1095815) RTDB: PUT successful[0m
+[0;33mW (1095815) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1097455) RTDB: PUT successful[0m
+[0;33mW (1097455) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1098455) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1099455) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1099455) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.9 %[0m
+[0;32mI (1100325) RTDB: PUT successful[0m
+[0;33mW (1100325) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1101965) RTDB: PUT successful[0m
+[0;33mW (1101975) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1103605) RTDB: PUT successful[0m
+[0;33mW (1103605) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1104605) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1105605) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1105605) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.8 %[0m
+[0;32mI (1106255) RTDB: PUT successful[0m
+[0;33mW (1106255) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1107905) RTDB: PUT successful[0m
+[0;33mW (1107905) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1109465) RTDB: PUT successful[0m
+[0;33mW (1109465) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1110465) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1111465) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1111465) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.9 %[0m
+[0;32mI (1112195) RTDB: PUT successful[0m
+[0;33mW (1112195) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1114045) RTDB: PUT successful[0m
+[0;33mW (1114045) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1115675) RTDB: PUT successful[0m
+[0;33mW (1115675) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1116675) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1117675) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1117675) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.9 %[0m
+[0;32mI (1118335) RTDB: PUT successful[0m
+[0;33mW (1118345) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1119985) RTDB: PUT successful[0m
+[0;33mW (1119985) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1121615) RTDB: PUT successful[0m
+[0;33mW (1121625) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1122625) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1123625) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1123625) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1124485) RTDB: PUT successful[0m
+[0;33mW (1124485) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1126125) RTDB: PUT successful[0m
+[0;33mW (1126125) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1127665) RTDB: PUT successful[0m
+[0;33mW (1127665) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1128665) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1129665) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1129665) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.5 %[0m
+[0;32mI (1130225) RTDB: PUT successful[0m
+[0;33mW (1130225) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1131865) RTDB: PUT successful[0m
+[0;33mW (1131865) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1133705) RTDB: PUT successful[0m
+[0;33mW (1133705) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1134705) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1135705) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1135705) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 50.5 %[0m
+[0;32mI (1136575) RTDB: PUT successful[0m
+[0;33mW (1136575) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1138205) RTDB: PUT successful[0m
+[0;33mW (1138205) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1139845) RTDB: PUT successful[0m
+[0;33mW (1139845) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1140845) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1141845) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1141845) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.3 %[0m
+[0;32mI (1142725) RTDB: PUT successful[0m
+[0;33mW (1142725) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1144355) RTDB: PUT successful[0m
+[0;33mW (1144355) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1145995) RTDB: PUT successful[0m
+[0;33mW (1145995) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1146995) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1147995) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1147995) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.3 %[0m
+[0;32mI (1148865) RTDB: PUT successful[0m
+[0;33mW (1148865) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1150705) RTDB: PUT successful[0m
+[0;33mW (1150705) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1152345) RTDB: PUT successful[0m
+[0;33mW (1152345) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1153345) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1154345) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1154345) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.0 %[0m
+[0;32mI (1155205) RTDB: PUT successful[0m
+[0;33mW (1155205) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1156855) RTDB: PUT successful[0m
+[0;33mW (1156855) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1158485) RTDB: PUT successful[0m
+[0;33mW (1158495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1159495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1160495) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1160495) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 48.8 %[0m
+[0;32mI (1161345) RTDB: PUT successful[0m
+[0;33mW (1161355) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1162995) RTDB: PUT successful[0m
+[0;33mW (1162995) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1164625) RTDB: PUT successful[0m
+[0;33mW (1164625) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1165625) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1166625) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1166625) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.0 %[0m
+[0;32mI (1167295) RTDB: PUT successful[0m
+[0;33mW (1167295) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1168955) RTDB: PUT successful[0m
+[0;33mW (1168955) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1170775) RTDB: PUT successful[0m
+[0;33mW (1170775) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1171775) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1172775) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1172775) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.1 %[0m
+[0;32mI (1173435) RTDB: PUT successful[0m
+[0;33mW (1173435) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1175075) RTDB: PUT successful[0m
+[0;33mW (1175075) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1176715) RTDB: PUT successful[0m
+[0;33mW (1176715) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1177715) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1178715) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1178715) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.0 %[0m
+[0;32mI (1179375) RTDB: PUT successful[0m
+[0;33mW (1179375) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1181015) RTDB: PUT successful[0m
+[0;33mW (1181015) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1182645) RTDB: PUT successful[0m
+[0;33mW (1182645) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1183645) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1184645) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1184645) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.3 %[0m
+[0;32mI (1185305) RTDB: PUT successful[0m
+[0;33mW (1185315) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1186945) RTDB: PUT successful[0m
+[0;33mW (1186955) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1188585) RTDB: PUT successful[0m
+[0;33mW (1188585) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1189585) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1190585) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1190585) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 49.1 %[0m
+[0;32mI (1191265) RTDB: PUT successful[0m
+[0;33mW (1191265) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1192885) RTDB: PUT successful[0m
+[0;33mW (1192885) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1194735) RTDB: PUT successful[0m
+[0;33mW (1194735) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1195735) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1196735) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1196735) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 48.9 %[0m
+[0;32mI (1197395) RTDB: PUT successful[0m
+[0;33mW (1197395) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1199035) RTDB: PUT successful[0m
+[0;33mW (1199035) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1200675) RTDB: PUT successful[0m
+[0;33mW (1200675) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1201675) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1202675) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1202675) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 48.8 %[0m
+[0;32mI (1203535) RTDB: PUT successful[0m
+[0;33mW (1203535) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1205375) RTDB: PUT successful[0m
+[0;33mW (1205375) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1207025) RTDB: PUT successful[0m
+[0;33mW (1207025) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1208025) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1209025) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1209025) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.7 %[0m
+[0;32mI (1209895) RTDB: PUT successful[0m
+[0;33mW (1209895) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1211735) RTDB: PUT successful[0m
+[0;33mW (1211735) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1213375) RTDB: PUT successful[0m
+[0;33mW (1213375) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1214375) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1215375) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1215375) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.9 %[0m
+[0;32mI (1216245) RTDB: PUT successful[0m
+[0;33mW (1216245) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1219105) RTDB: PUT successful[0m
+[0;33mW (1219105) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1220745) RTDB: PUT successful[0m
+[0;33mW (1220745) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1221745) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1222745) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1222745) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.9 %[0m
+[0;32mI (1223405) RTDB: PUT successful[0m
+[0;33mW (1223405) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1225045) RTDB: PUT successful[0m
+[0;33mW (1225045) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1226695) RTDB: PUT successful[0m
+[0;33mW (1226695) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1227695) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1228695) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1228695) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.1 %[0m
+[0;32mI (1229345) RTDB: PUT successful[0m
+[0;33mW (1229345) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1230985) RTDB: PUT successful[0m
+[0;33mW (1230985) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1232615) RTDB: PUT successful[0m
+[0;33mW (1232615) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1233615) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1234615) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1234615) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.1 %[0m
+[0;32mI (1235285) RTDB: PUT successful[0m
+[0;33mW (1235285) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1236925) RTDB: PUT successful[0m
+[0;33mW (1236925) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1238565) RTDB: PUT successful[0m
+[0;33mW (1238565) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1239565) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1240565) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1240565) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.9 %[0m
+[0;32mI (1241235) RTDB: PUT successful[0m
+[0;33mW (1241235) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1242865) RTDB: PUT successful[0m
+[0;33mW (1242865) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1244495) RTDB: PUT successful[0m
+[0;33mW (1244495) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1245495) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1246495) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1246495) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1247175) RTDB: PUT successful[0m
+[0;33mW (1247185) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1248795) RTDB: PUT successful[0m
+[0;33mW (1248795) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1250435) RTDB: PUT successful[0m
+[0;33mW (1250435) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1251435) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1252435) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1252435) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1253095) RTDB: PUT successful[0m
+[0;33mW (1253095) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1254745) RTDB: PUT successful[0m
+[0;33mW (1254745) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1256385) RTDB: PUT successful[0m
+[0;33mW (1256385) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1257385) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1258385) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1258385) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.9 %[0m
+[0;32mI (1259245) RTDB: PUT successful[0m
+[0;33mW (1259245) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1260885) RTDB: PUT successful[0m
+[0;33mW (1260885) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1262515) RTDB: PUT successful[0m
+[0;33mW (1262525) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1263525) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1264525) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1264525) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1265395) RTDB: PUT successful[0m
+[0;33mW (1265395) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1267645) RTDB: PUT successful[0m
+[0;33mW (1267645) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1269285) RTDB: PUT successful[0m
+[0;33mW (1269285) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1270285) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1271285) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1271285) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.8 %[0m
+[0;32mI (1271945) RTDB: PUT successful[0m
+[0;33mW (1271945) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1273585) RTDB: PUT successful[0m
+[0;33mW (1273585) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1275225) RTDB: PUT successful[0m
+[0;33mW (1275225) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1276225) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1277225) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1277225) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.0 %[0m
+[0;32mI (1277885) RTDB: PUT successful[0m
+[0;33mW (1277885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1279525) RTDB: PUT successful[0m
+[0;33mW (1279525) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1281155) RTDB: PUT successful[0m
+[0;33mW (1281155) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1282155) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1283155) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1283155) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.0 %[0m
+[0;32mI (1283825) RTDB: PUT successful[0m
+[0;33mW (1283825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1285465) RTDB: PUT successful[0m
+[0;33mW (1285465) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1287105) RTDB: PUT successful[0m
+[0;33mW (1287105) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1288105) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1289105) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1289105) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.0 %[0m
+[0;32mI (1289755) RTDB: PUT successful[0m
+[0;33mW (1289755) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1291405) RTDB: PUT successful[0m
+[0;33mW (1291405) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1293045) RTDB: PUT successful[0m
+[0;33mW (1293045) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1294045) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1295045) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1295045) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.0 %[0m
+[0;32mI (1295715) RTDB: PUT successful[0m
+[0;33mW (1295715) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1297335) RTDB: PUT successful[0m
+[0;33mW (1297335) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1298975) RTDB: PUT successful[0m
+[0;33mW (1298975) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1299975) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1300975) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1300975) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 48.7 %[0m
+[0;32mI (1301645) RTDB: PUT successful[0m
+[0;33mW (1301645) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1303275) RTDB: PUT successful[0m
+[0;33mW (1303275) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1305125) RTDB: PUT successful[0m
+[0;33mW (1305125) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1306125) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1307125) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1307125) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.5 %[0m
+[0;32mI (1307995) RTDB: PUT successful[0m
+[0;33mW (1307995) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1309825) RTDB: PUT successful[0m
+[0;33mW (1309825) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1311465) RTDB: PUT successful[0m
+[0;33mW (1311475) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1312475) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1313475) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1313475) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 48.4 %[0m
+[0;32mI (1314125) RTDB: PUT successful[0m
+[0;33mW (1314125) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1315765) RTDB: PUT successful[0m
+[0;33mW (1315765) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1318235) RTDB: PUT successful[0m
+[0;33mW (1318235) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1319235) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1320235) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1320235) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.5 %[0m
+[0;32mI (1320885) RTDB: PUT successful[0m
+[0;33mW (1320885) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1322535) RTDB: PUT successful[0m
+[0;33mW (1322535) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1324165) RTDB: PUT successful[0m
+[0;33mW (1324165) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1325165) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1326165) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1326165) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.7 %[0m
+[0;32mI (1326825) RTDB: PUT successful[0m
+[0;33mW (1326825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1328475) RTDB: PUT successful[0m
+[0;33mW (1328475) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1330105) RTDB: PUT successful[0m
+[0;33mW (1330105) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1331105) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1332105) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1332105) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.7 %[0m
+[0;32mI (1332765) RTDB: PUT successful[0m
+[0;33mW (1332765) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1334415) RTDB: PUT successful[0m
+[0;33mW (1334415) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1336045) RTDB: PUT successful[0m
+[0;33mW (1336045) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1337045) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1338045) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1338045) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.7 %[0m
+[0;32mI (1338705) RTDB: PUT successful[0m
+[0;33mW (1338705) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1340555) RTDB: PUT successful[0m
+[0;33mW (1340555) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1342805) RTDB: PUT successful[0m
+[0;33mW (1342805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1343805) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1344805) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1344805) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.7 %[0m
+[0;32mI (1345465) RTDB: PUT successful[0m
+[0;33mW (1345465) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1347005) RTDB: PUT successful[0m
+[0;33mW (1347005) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1348945) RTDB: PUT successful[0m
+[0;33mW (1348945) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1349945) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1350945) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1350945) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1351605) RTDB: PUT successful[0m
+[0;33mW (1351605) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1353245) RTDB: PUT successful[0m
+[0;33mW (1353245) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1355295) RTDB: PUT successful[0m
+[0;33mW (1355295) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1356295) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1357295) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1357295) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1357955) RTDB: PUT successful[0m
+[0;33mW (1357965) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1359595) RTDB: PUT successful[0m
+[0;33mW (1359595) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1361235) RTDB: PUT successful[0m
+[0;33mW (1361235) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1362235) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1363235) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1363235) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1363905) RTDB: PUT successful[0m
+[0;33mW (1363905) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1365535) RTDB: PUT successful[0m
+[0;33mW (1365535) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1367175) RTDB: PUT successful[0m
+[0;33mW (1367175) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1368175) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1369175) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1369175) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.8 %[0m
+[0;32mI (1370665) RTDB: PUT successful[0m
+[0;33mW (1370665) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1372295) RTDB: PUT successful[0m
+[0;33mW (1372295) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1373935) RTDB: PUT successful[0m
+[0;33mW (1373935) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1374935) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1375935) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1375935) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.8 %[0m
+[0;32mI (1376595) RTDB: PUT successful[0m
+[0;33mW (1376595) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1378235) RTDB: PUT successful[0m
+[0;33mW (1378235) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1379875) RTDB: PUT successful[0m
+[0;33mW (1379875) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1380875) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1381875) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1381875) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1382535) RTDB: PUT successful[0m
+[0;33mW (1382535) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1384175) RTDB: PUT successful[0m
+[0;33mW (1384185) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1385805) RTDB: PUT successful[0m
+[0;33mW (1385805) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1386815) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1387815) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1387815) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.8 %[0m
+[0;32mI (1388575) RTDB: PUT successful[0m
+[0;33mW (1388575) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1390115) RTDB: PUT successful[0m
+[0;33mW (1390115) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1391955) RTDB: PUT successful[0m
+[0;33mW (1391955) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1392955) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1393955) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1393955) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1394825) RTDB: PUT successful[0m
+[0;33mW (1394825) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1396455) RTDB: PUT successful[0m
+[0;33mW (1396455) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1398105) RTDB: PUT successful[0m
+[0;33mW (1398105) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1399105) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1400105) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1400105) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.8 %[0m
+[0;32mI (1400965) RTDB: PUT successful[0m
+[0;33mW (1400975) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1402615) RTDB: PUT successful[0m
+[0;33mW (1402615) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1404235) RTDB: PUT successful[0m
+[0;33mW (1404245) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1405245) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1406245) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1406245) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.0 %[0m
+[0;32mI (1406915) RTDB: PUT successful[0m
+[0;33mW (1406915) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1408545) RTDB: PUT successful[0m
+[0;33mW (1408545) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1410185) RTDB: PUT successful[0m
+[0;33mW (1410185) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1411185) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1412185) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1412185) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.4 %[0m
+[0;32mI (1412845) RTDB: PUT successful[0m
+[0;33mW (1412845) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1414485) RTDB: PUT successful[0m
+[0;33mW (1414485) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1416115) RTDB: PUT successful[0m
+[0;33mW (1416125) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1417125) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1418125) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1418125) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.0 %[0m
+[0;32mI (1418785) RTDB: PUT successful[0m
+[0;33mW (1418785) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1420345) RTDB: PUT successful[0m
+[0;33mW (1420345) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1422055) RTDB: PUT successful[0m
+[0;33mW (1422055) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1423055) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1424055) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1424055) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.9 %[0m
+[0;32mI (1424715) RTDB: PUT successful[0m
+[0;33mW (1424725) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1426355) RTDB: PUT successful[0m
+[0;33mW (1426355) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1428205) RTDB: PUT successful[0m
+[0;33mW (1428205) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1429205) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1430205) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1430205) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.0 %[0m
+[0;32mI (1431075) RTDB: PUT successful[0m
+[0;33mW (1431075) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1432915) RTDB: PUT successful[0m
+[0;33mW (1432915) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1434555) RTDB: PUT successful[0m
+[0;33mW (1434555) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1435555) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1436555) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1436555) PLANT_MONITOR: Temp: 29.5 °C | Humidity: 52.9 %[0m
+[0;32mI (1437415) RTDB: PUT successful[0m
+[0;33mW (1437415) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1439055) RTDB: PUT successful[0m
+[0;33mW (1439055) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1440695) RTDB: PUT successful[0m
+[0;33mW (1440695) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1441695) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1442695) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1442695) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 73.5 %[0m
+[0;32mI (1443575) RTDB: PUT successful[0m
+[0;33mW (1443575) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1445205) RTDB: PUT successful[0m
+[0;33mW (1445205) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1448275) RTDB: PUT successful[0m
+[0;33mW (1448285) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1449285) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1450285) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1450285) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 58.7 %[0m
+[0;32mI (1451145) RTDB: PUT successful[0m
+[0;33mW (1451145) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1452775) RTDB: PUT successful[0m
+[0;33mW (1452775) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1454415) RTDB: PUT successful[0m
+[0;33mW (1454415) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1455415) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1456415) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1456415) PLANT_MONITOR: Temp: 29.4 °C | Humidity: 51.3 %[0m
+[0;32mI (1457285) RTDB: PUT successful[0m
+[0;33mW (1457285) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1458925) RTDB: PUT successful[0m
+[0;33mW (1458925) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1462605) RTDB: PUT successful[0m
+[0;33mW (1462615) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1463615) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1464615) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1464615) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.6 %[0m
+[0;32mI (1465485) RTDB: PUT successful[0m
+[0;33mW (1465485) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1467115) RTDB: PUT successful[0m
+[0;33mW (1467115) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1468955) RTDB: PUT successful[0m
+[0;33mW (1468955) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1469955) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1470955) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1470955) PLANT_MONITOR: Temp: 29.3 °C | Humidity: 49.0 %[0m
+[0;32mI (1471835) RTDB: PUT successful[0m
+[0;33mW (1471835) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1473675) RTDB: PUT successful[0m
+[0;33mW (1473675) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1475515) RTDB: PUT successful[0m
+[0;33mW (1475515) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1476515) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1477515) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1477515) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.0 %[0m
+[0;32mI (1478375) RTDB: PUT successful[0m
+[0;33mW (1478375) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1480015) RTDB: PUT successful[0m
+[0;33mW (1480015) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1484115) RTDB: PUT successful[0m
+[0;33mW (1484115) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1485115) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1486115) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1486115) PLANT_MONITOR: Temp: 29.2 °C | Humidity: 49.0 %[0m
+[0;32mI (1487085) RTDB: PUT successful[0m
+[0;33mW (1487085) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1489035) RTDB: PUT successful[0m
+[0;33mW (1489035) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1490675) RTDB: PUT successful[0m
+[0;33mW (1490675) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1491675) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1492675) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1492675) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.7 %[0m
+[0;32mI (1493325) RTDB: PUT successful[0m
+[0;33mW (1493335) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1494975) RTDB: PUT successful[0m
+[0;33mW (1494985) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1496555) RTDB: PUT successful[0m
+[0;33mW (1496555) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1497555) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1498555) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1498555) PLANT_MONITOR: Temp: 29.1 °C | Humidity: 48.8 %[0m
+[0;32mI (1500705) RTDB: PUT successful[0m
+[0;33mW (1500705) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1502335) RTDB: PUT successful[0m
+[0;33mW (1502345) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1503985) RTDB: PUT successful[0m
+[0;33mW (1503995) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1504995) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1505995) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1505995) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1506845) RTDB: PUT successful[0m
+[0;33mW (1506845) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1508785) RTDB: PUT successful[0m
+[0;33mW (1508785) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1510535) RTDB: PUT successful[0m
+[0;33mW (1510535) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1511535) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1512535) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1512535) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 48.7 %[0m
+[0;32mI (1513405) RTDB: PUT successful[0m
+[0;33mW (1513405) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1515045) RTDB: PUT successful[0m
+[0;33mW (1515045) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m
+[0;32mI (1516685) RTDB: PUT successful[0m
+[0;33mW (1516685) PLANT_MONITOR: Failed to send to Firebase (attempt 3)[0m
+[0;33mW (1517685) PLANT_MONITOR: Failed to push data to Firebase[0m
+[0;32mI (1518685) PLANT_MONITOR: Soil moisture raw: 4095[0m
+[0;32mI (1518685) PLANT_MONITOR: Temp: 29.0 °C | Humidity: 49.0 %[0m
+[0;32mI (1519345) RTDB: PUT successful[0m
+[0;33mW (1519345) PLANT_MONITOR: Failed to send to Firebase (attempt 1)[0m
+[0;32mI (1520975) RTDB: PUT successful[0m
+[0;33mW (1520975) PLANT_MONITOR: Failed to send to Firebase (attempt 2)[0m

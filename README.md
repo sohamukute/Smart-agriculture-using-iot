@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Firebase in ESP-IDF
 
 
@@ -34,3 +35,6 @@ realtime database for now. other features later
  }
 - Copy email and password of the newly created user to USER_EMAIL and USER_PASSWORD macros
 - copy the link of the realtime database (not the website url) to DATABASE_URL 
+=======
+# Smart-agriculture-using-iot
+>>>>>>> bef1f7f4b38d3df52a3910683dc206d30775ac42

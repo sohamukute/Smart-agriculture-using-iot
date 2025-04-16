@@ -12,255 +12,222 @@
             --primary-color: #4CAF50;
             --secondary-color: #2E7D32;
             --accent-color: #8BC34A;
-            --warning-color: #FFC107;
-            --danger-color: #F44336;
-            --light-bg: #f5f5f5;
-            --dark-text: #333333;
-            --light-text: #ffffff;
-            --border-radius: 8px;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --light-text: #fff;
+            --border-radius: 10px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
-        
+
         body {
             background-color: var(--light-bg);
             color: var(--dark-text);
             line-height: 1.6;
         }
-        
+
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background-color: var(--primary-color);
             color: var(--light-text);
-            padding: 20px 0;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        
+
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
         }
-        
+
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
         }
-        
-        .logo svg {
-            width: 40px;
-            height: 40px;
-            fill: var(--light-text);
+
+        .system-status {
+            font-size: 14px;
         }
-        
-        .admin-panel {
+
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .status-connected { background-color: var(--primary-color); }
+        .status-disconnected { background-color: #F44336; }
+
+        .crop-management {
             background-color: white;
             border-radius: var(--border-radius);
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .control-group {
+            padding: 15px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        
-        .control-group h3 {
-            margin-bottom: 10px;
+
+        .crop-management h3 {
             color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 18px;
         }
-        
-        .controls {
+
+        .crop-controls {
             display: flex;
-            gap: 20px;
+            gap: 15px;
+            justify-content: center;
             flex-wrap: wrap;
         }
-        
-        select, button {
-            padding: 10px 15px;
+
+        select {
+            padding: 8px 15px;
             border-radius: var(--border-radius);
             border: 1px solid #ddd;
-            font-size: 16px;
-        }
-        
-        select {
+            font-size: 14px;
             min-width: 200px;
         }
-        
-        button {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: var(--secondary-color);
-        }
-        
+
         .dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
         }
-        
+
         .card {
             background-color: white;
             border-radius: var(--border-radius);
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        
+
         .card h3 {
             color: var(--secondary-color);
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
         }
-        
+
         .sensor-reading {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
+            margin: 15px 0;
         }
-        
+
         .sensor-icon {
             width: 40px;
             height: 40px;
             background-color: var(--accent-color);
             border-radius: 50%;
-            margin-right: 15px;
+            margin: 0 auto 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: var(--light-text);
+            font-size: 18px;
         }
-        
+
         .value {
-            font-size: 20px;
+            font-size: 24px;
             font-weight: bold;
+            color: var(--secondary-color);
         }
-        
+
         .unit {
             font-size: 14px;
             color: #666;
             margin-left: 5px;
         }
-        
+
+        .admin-panel {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .control-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--border-radius);
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .control-group button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .alert {
+            background-color: #fff3cd;
+            border-left: 4px solid #FFC107;
+            padding: 10px;
+            margin-top: 10px;
+            color: #856404;
+            display: none;
+        }
+
         .recommendations {
             background-color: white;
             border-radius: var(--border-radius);
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: left;
+            grid-column: 1 / -1;
         }
-        
-        .recommendation-content {
-            margin-top: 20px;
-        }
-        
+
         .recommendation-item {
-            margin-bottom: 15px;
-            padding: 15px;
-            border-left: 4px solid var(--accent-color);
+            margin: 15px 0;
+            padding: 10px;
             background-color: rgba(139, 195, 74, 0.1);
+            border-left: 4px solid var(--accent-color);
         }
-        
+
         .recommendation-title {
             font-weight: bold;
             color: var(--secondary-color);
             margin-bottom: 5px;
         }
-        
-        .loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100px;
-        }
-        
-        .spinner {
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border-left-color: var(--primary-color);
-            animation: spin 1s linear infinite;
-            margin-right: 10px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .alert {
-            background-color: rgba(255, 193, 7, 0.2);
-            border-left: 4px solid var(--warning-color);
-            padding: 15px;
-            margin-bottom: 20px;
-            color: #856404;
-        }
-        
-        .status-indicator {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 5px;
-        }
-        
-        .status-connected {
-            background-color: var(--primary-color);
-        }
-        
-        .status-disconnected {
-            background-color: var(--danger-color);
-        }
-        
+
         .action-needed {
             font-weight: bold;
             color: var(--secondary-color);
         }
-        
-        .error-message {
-            color: var(--danger-color);
-            font-weight: bold;
-        }
-        
+
         footer {
             background-color: var(--secondary-color);
             color: var(--light-text);
             text-align: center;
-            padding: 20px 0;
+            padding: 10px 0;
             margin-top: 30px;
         }
-        
+
         @media (max-width: 768px) {
             .dashboard {
                 grid-template-columns: 1fr;
             }
-            
-            .controls {
+            .crop-controls {
                 flex-direction: column;
+                gap: 10px;
             }
-            
-            select, button {
+            select {
                 width: 100%;
             }
         }
@@ -270,132 +237,89 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M12 22l-4-4h8l-4 4zm4-10c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-2-8c-4.42 0-8 3.58-8 8 0 1.65.55 3.15 1.47 4.35l-1.47 1.65 1.47 1.47c1.2.92 2.7 1.53 4.35 1.53 1.55 0 3-.51 4.18-1.35l1.35-1.65-1.35-1.65c.92-1.2 1.47-2.7 1.47-4.35 0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
-                    </svg>
-                    <span>AgriSense Dashboard</span>
-                </div>
-                <div class="system-status">
-                    <span id="connection-status">
-                        <span class="status-indicator status-disconnected"></span>
-                        Sensors Disconnected
-                    </span>
+                <div class="logo">AgriSense Dashboard</div>
+                <div class="system-status" id="connection-status">
+                    <span class="status-indicator status-disconnected"></span> Sensors Disconnected
                 </div>
             </div>
         </div>
     </header>
-    
+
     <div class="container">
+        <div class="crop-management">
+            <h3>Crop Management</h3>
+            <div class="crop-controls">
+                <select id="crop-select">
+                    <option value="">Select Crop Type</option>
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="corn">Corn</option>
+                    <option value="potato">Potato</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="cotton">Cotton</option>
+                </select>
+                <select id="growth-stage">
+                    <option value="">Select Growth Stage</option>
+                    <option value="seedling">Seedling</option>
+                    <option value="vegetative">Vegetative</option>
+                    <option value="flowering">Flowering</option>
+                    <option value="fruiting">Fruiting</option>
+                    <option value="maturity">Maturity</option>
+                </select>
+            </div>
+        </div>
+
         <div class="admin-panel">
             <div class="control-group">
-                <h3>Crop Management</h3>
-                <div class="controls">
-                    <select id="crop-select">
-                        <option value="">Select Crop Type</option>
-                        <option value="wheat">Wheat</option>
-                        <option value="rice">Rice</option>
-                        <option value="corn">Corn</option>
-                        <option value="potato">Potato</option>
-                        <option value="tomato">Tomato</option>
-                        <option value="cotton">Cotton</option>
-                    </select>
-                    <select id="growth-stage">
-                        <option value="">Select Growth Stage</option>
-                        <option value="seedling">Seedling</option>
-                        <option value="vegetative">Vegetative</option>
-                        <option value="flowering">Flowering</option>
-                        <option value="fruiting">Fruiting</option>
-                        <option value="maturity">Maturity</option>
-                    </select>
-                </div>
+                <button id="connect-sensors">Connect Sensors</button>
+                <button id="refresh-data">Refresh Data</button>
             </div>
-            
-            <div class="control-group">
-                <h3>Sensor Control</h3>
-                <div class="controls">
-                    <button id="connect-sensors">Connect Sensors</button>
-                    <button id="refresh-data">Refresh Data</button>
-                </div>
-            </div>
-            
-            <div id="sensor-alert" class="alert" style="display: none;">
-                Please connect sensors to view real-time data and get accurate recommendations.
+            <div id="sensor-alert" class="alert">
+                Please connect sensors to view real-time data.
             </div>
         </div>
-        
+
         <div class="dashboard">
             <div class="card">
-                <h3>Temperature & Humidity (DHT)</h3>
-                <div id="dht-data">
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">T</div>
-                        <div>
-                            <span id="temperature-value" class="value">--</span>
-                            <span class="unit">°C</span>
-                        </div>
-                    </div>
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">H</div>
-                        <div>
-                            <span id="humidity-value" class="value">--</span>
-                            <span class="unit">%</span>
-                        </div>
+                <h3>Temperature</h3>
+                <div class="sensor-reading">
+                    <div class="sensor-icon">T</div>
+                    <div>
+                        <span id="temperature-value" class="value">--</span>
+                        <span class="unit">°C</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
-                <h3>Soil Moisture & Water Level</h3>
-                <div id="water-data">
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">M</div>
-                        <div>
-                            <span id="moisture-value" class="value">--</span>
-                            <span class="unit">%</span>
-                        </div>
-                    </div>
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">W</div>
-                        <div>
-                            <span id="water-level-value" class="value">--</span>
-                            <span class="unit">cm</span>
-                        </div>
+                <h3>Humidity</h3>
+                <div class="sensor-reading">
+                    <div class="sensor-icon">H</div>
+                    <div>
+                        <span id="humidity-value" class="value">--</span>
+                        <span class="unit">%</span>
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
-                <h3>Soil Analysis</h3>
-                <div id="soil-data">
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">T</div>
-                        <div>
-                            <span id="soil-temp-value" class="value">--</span>
-                            <span class="unit">°C</span>
-                        </div>
-                    </div>
-                    <div class="sensor-reading">
-                        <div class="sensor-icon">P</div>
-                        <div>
-                            <span id="soil-ph-value" class="value">--</span>
-                            <span class="unit">pH</span>
-                        </div>
+                <h3>Soil Moisture</h3>
+                <div class="sensor-reading">
+                    <div class="sensor-icon">M</div>
+                    <div>
+                        <span id="moisture-value" class="value">--</span>
+                        <span class="unit">%</span>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="recommendations">
-            <h3>AI Recommendations</h3>
-            <div id="recommendation-content" class="recommendation-content">
-                <div class="alert">
-                    Please connect sensors and select crop type to get AI-powered recommendations.
-                </div>
+
+            <div class="card recommendations">
+                <h3>AI Recommendations</h3>
+                <div id="recommendation-content"></div>
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="container">
             <p>© 2025 AgriSense - Smart Agriculture Solutions</p>
@@ -419,85 +343,63 @@
         firebase.initializeApp(firebaseConfig);
         const db = firebase.database();
 
-        // Global variables
         let sensorsConnected = false;
-        let selectedCrop = "";
-        let selectedStage = "";
         let sensorData = {
             temperature: null,
             humidity: null,
-            moisture: null,
-            waterLevel: null,
-            soilTemp: null,
-            soilPH: null
+            moisture: null
         };
         let sensorListeners = [];
+        let selectedCrop = "";
+        let selectedStage = "";
 
-        // DOM Elements
         const connectButton = document.getElementById('connect-sensors');
         const refreshButton = document.getElementById('refresh-data');
-        const cropSelect = document.getElementById('crop-select');
-        const growthStage = document.getElementById('growth-stage');
         const connectionStatus = document.getElementById('connection-status');
         const sensorAlert = document.getElementById('sensor-alert');
-        const recommendationContent = document.getElementById('recommendation-content');
-        
-        // Sensor value elements
         const temperatureValue = document.getElementById('temperature-value');
         const humidityValue = document.getElementById('humidity-value');
         const moistureValue = document.getElementById('moisture-value');
-        const waterLevelValue = document.getElementById('water-level-value');
-        const soilTempValue = document.getElementById('soil-temp-value');
-        const soilPHValue = document.getElementById('soil-ph-value');
-        
-        // Event Listeners
+        const recommendationContent = document.getElementById('recommendation-content');
+        const cropSelect = document.getElementById('crop-select');
+        const growthStage = document.getElementById('growth-stage');
+
         connectButton.addEventListener('click', toggleSensorConnection);
         refreshButton.addEventListener('click', refreshData);
         cropSelect.addEventListener('change', updateCropSelection);
         growthStage.addEventListener('change', updateStageSelection);
-        
-        // Functions
+
         function toggleSensorConnection() {
             if (sensorsConnected) {
-                // Disconnect sensors
                 sensorsConnected = false;
                 connectButton.textContent = 'Connect Sensors';
                 connectionStatus.innerHTML = '<span class="status-indicator status-disconnected"></span> Sensors Disconnected';
                 sensorAlert.style.display = 'block';
-                
-                // Detach Firebase listeners
+
                 sensorListeners.forEach(listener => listener());
                 sensorListeners = [];
-                
                 resetSensorValues();
                 updateRecommendations();
             } else {
-                // Show loading state
                 connectButton.textContent = 'Connecting...';
                 connectButton.disabled = true;
-                
-                // Simulate connection delay and start Firebase listeners
+
                 setTimeout(() => {
                     sensorsConnected = true;
                     connectButton.textContent = 'Disconnect Sensors';
                     connectButton.disabled = false;
                     connectionStatus.innerHTML = '<span class="status-indicator status-connected"></span> Sensors Connected';
                     sensorAlert.style.display = 'none';
-                    
-                    // Start real-time listeners
                     setupFirebaseListeners();
                 }, 2000);
             }
         }
-        
+
         function setupFirebaseListeners() {
             const sensorPaths = {
                 temperature: 'Plant/Temperature',
                 humidity: 'Plant/Humidity',
-                moisture: 'Plant/SoilMoisture',
-                waterLevel: 'Plant/WaterLevel',
-                soilTemp: 'Plant/SoilTemp',
-                soilPH: 'Plant/SoilPH'
+                moisture: 'Plant/SoilMoisture'
             };
 
             Object.entries(sensorPaths).forEach(([key, path]) => {
@@ -511,60 +413,42 @@
                     console.error(`Error fetching ${key}:`, error);
                     sensorData[key] = null;
                     sensorAlert.style.display = 'block';
-                    sensorAlert.innerHTML = `<span class="error-message">Error fetching ${key}: ${error.message}</span>`;
+                    sensorAlert.textContent = `Error fetching ${key}: ${error.message}`;
                     updateSensorDisplay();
+                    updateRecommendations();
                 });
                 sensorListeners.push(() => ref.off('value', listener));
             });
         }
-        
+
         function resetSensorValues() {
             temperatureValue.textContent = '--';
             humidityValue.textContent = '--';
             moistureValue.textContent = '--';
-            waterLevelValue.textContent = '--';
-            soilTempValue.textContent = '--';
-            soilPHValue.textContent = '--';
-            
-            sensorData = {
-                temperature: null,
-                humidity: null,
-                moisture: null,
-                waterLevel: null,
-                soilTemp: null,
-                soilPH: null
-            };
+            sensorData = { temperature: null, humidity: null, moisture: null };
         }
-        
+
         function updateSensorDisplay() {
             temperatureValue.textContent = sensorData.temperature !== null ? sensorData.temperature : '--';
             humidityValue.textContent = sensorData.humidity !== null ? sensorData.humidity : '--';
             moistureValue.textContent = sensorData.moisture !== null ? sensorData.moisture : '--';
-            waterLevelValue.textContent = sensorData.waterLevel !== null ? sensorData.waterLevel : '--';
-            soilTempValue.textContent = sensorData.soilTemp !== null ? sensorData.soilTemp : '--';
-            soilPHValue.textContent = sensorData.soilPH !== null ? sensorData.soilPH : '--';
         }
-        
+
         function refreshData() {
             if (!sensorsConnected) {
                 alert('Please connect sensors first to refresh data.');
                 return;
             }
-            
-            // Show loading state
+
             refreshButton.textContent = 'Refreshing...';
             refreshButton.disabled = true;
-            
-            // One-time read from Firebase
+
             const sensorPaths = {
                 temperature: 'Plant/Temperature',
                 humidity: 'Plant/Humidity',
-                moisture: 'Plant/SoilMoisture',
-                waterLevel: 'Plant/WaterLevel',
-                soilTemp: 'Plant/SoilTemp',
-                soilPH: 'Plant/SoilPH'
+                moisture: 'Plant/SoilMoisture'
             };
-            
+
             const promises = Object.entries(sensorPaths).map(([key, path]) => {
                 return db.ref(path).once('value').then(snapshot => {
                     const value = snapshot.val();
@@ -573,10 +457,10 @@
                     console.error(`Error refreshing ${key}:`, error);
                     sensorData[key] = null;
                     sensorAlert.style.display = 'block';
-                    sensorAlert.innerHTML = `<span class="error-message">Error refreshing ${key}: ${error.message}</span>`;
+                    sensorAlert.textContent = `Error refreshing ${key}: ${error.message}`;
                 });
             });
-            
+
             Promise.all(promises).then(() => {
                 updateSensorDisplay();
                 updateRecommendations();
@@ -584,27 +468,27 @@
                 refreshButton.disabled = false;
             });
         }
-        
+
         function updateCropSelection() {
             selectedCrop = cropSelect.value;
             updateRecommendations();
         }
-        
+
         function updateStageSelection() {
             selectedStage = growthStage.value;
             updateRecommendations();
         }
-        
+
         function updateRecommendations() {
             if (!sensorsConnected) {
                 recommendationContent.innerHTML = `
                     <div class="alert">
-                        Please connect sensors and select crop type to get AI-powered recommendations.
+                        Please connect sensors to get AI-powered recommendations.
                     </div>
                 `;
                 return;
             }
-            
+
             if (!selectedCrop || !selectedStage) {
                 recommendationContent.innerHTML = `
                     <div class="alert">
@@ -613,8 +497,7 @@
                 `;
                 return;
             }
-            
-            // Check if any sensor data is available
+
             const hasData = Object.values(sensorData).some(value => value !== null);
             if (!hasData) {
                 recommendationContent.innerHTML = `
@@ -624,143 +507,105 @@
                 `;
                 return;
             }
-            
-            // Show loading state for ML analysis
+
             recommendationContent.innerHTML = `
                 <div class="loading">
                     <div class="spinner"></div>
-                    <div>Running ML analysis on sensor data...</div>
+                    Analyzing data...
                 </div>
             `;
-            
-            // Simulate ML analysis delay
+
             setTimeout(() => {
-                const recommendations = generateRecommendations(selectedCrop, selectedStage, sensorData);
+                const recommendations = generateRecommendations(sensorData, selectedCrop, selectedStage);
                 displayRecommendations(recommendations);
-            }, 3000);
+            }, 2000);
         }
-        
-        function generateRecommendations(crop, stage, data) {
+
+        function generateRecommendations(data, crop, stage) {
             const recommendations = {
                 irrigation: { needed: false, urgency: 'low', details: '' },
-                cultivation: { needed: false, urgency: 'low', details: '' },
                 fertilization: { needed: false, urgency: 'low', details: '' },
-                harvest: { ready: false, details: '' }
+                planting: { ready: false, details: '' }
             };
-            
+
             // Irrigation recommendation
-            if (data.moisture !== null) {
-                if (data.moisture < 30) {
+            if (data.moisture !== null && data.temperature !== null) {
+                const optimalMoisture = (stage === 'seedling' || stage === 'vegetative') ? 50 : 40;
+                const highTempThreshold = (crop === 'rice' || crop === 'tomato') ? 28 : 25;
+                if (data.moisture < optimalMoisture - 20 && data.temperature > highTempThreshold) {
                     recommendations.irrigation.needed = true;
-                    recommendations.irrigation.urgency = data.moisture < 25 ? 'high' : 'medium';
-                    recommendations.irrigation.details = `Soil moisture (${data.moisture}%) is below optimal level for ${crop} at ${stage} stage. Schedule irrigation within the next 24 hours.`;
+                    recommendations.irrigation.urgency = 'high';
+                    recommendations.irrigation.details = `For ${crop} at ${stage} stage: Soil moisture (${data.moisture}%) is critically low and temperature (${data.temperature}°C) is high. Irrigate immediately.`;
+                } else if (data.moisture < optimalMoisture - 10 && data.temperature > highTempThreshold - 5) {
+                    recommendations.irrigation.needed = true;
+                    recommendations.irrigation.urgency = 'medium';
+                    recommendations.irrigation.details = `For ${crop} at ${stage} stage: Soil moisture (${data.moisture}%) is moderate and temperature (${data.temperature}°C) is warm. Irrigate within 12 hours.`;
                 } else {
-                    recommendations.irrigation.details = `Soil moisture (${data.moisture}%) is adequate for ${crop} at ${stage} stage. No irrigation needed at this time.`;
+                    recommendations.irrigation.details = `For ${crop} at ${stage} stage: Soil moisture (${data.moisture}%) and temperature (${data.temperature}°C) are adequate. No irrigation needed.`;
                 }
             } else {
-                recommendations.irrigation.details = `Soil moisture data unavailable for ${crop} at ${stage} stage.`;
+                recommendations.irrigation.details = 'Insufficient data for irrigation recommendation.';
             }
-            
-            // Cultivation recommendation
-            if (data.soilTemp !== null) {
-                if ((stage === 'seedling' || stage === 'vegetative') && data.soilTemp < 15) {
-                    recommendations.cultivation.needed = true;
-                    recommendations.cultivation.urgency = 'medium';
-                    recommendations.cultivation.details = `Soil temperature (${data.soilTemp}°C) is suboptimal for ${crop} root development. Consider shallow cultivation to improve soil aeration and warming.`;
-                } else if (stage === 'vegetative' && data.moisture > 45) {
-                    recommendations.cultivation.needed = true;
-                    recommendations.cultivation.details = `High soil moisture (${data.moisture}%) may benefit from light cultivation to prevent compaction and improve drainage for ${crop}.`;
-                } else {
-                    recommendations.cultivation.details = `Current soil conditions are suitable for ${crop} at ${stage} stage. No cultivation required at this time.`;
-                }
-            } else {
-                recommendations.cultivation.details = `Soil temperature data unavailable for ${crop} at ${stage} stage.`;
-            }
-            
+
             // Fertilization recommendation
-            if (data.soilPH !== null) {
-                if (stage === 'seedling' || stage === 'vegetative') {
-                    if (data.soilPH < 6.0) {
-                        recommendations.fertilization.needed = true;
-                        recommendations.fertilization.urgency = 'medium';
-                        recommendations.fertilization.details = `Soil pH (${data.soilPH}) is slightly acidic for ${crop}. Consider applying lime-based amendments to raise pH and nitrogen-rich fertilizer for vegetative growth.`;
-                    } else if (data.soilPH > 7.5) {
-                        recommendations.fertilization.needed = true;
-                        recommendations.fertilization.details = `Soil pH (${data.soilPH}) is alkaline for ${crop}. Consider acidifying amendments and balanced NPK fertilizer application.`;
-                    } else {
-                        recommendations.fertilization.details = `Soil pH (${data.soilPH}) is within optimal range for ${crop} nutrient absorption. Follow standard fertilization schedule for ${stage} stage.`;
-                    }
-                } else if (stage === 'flowering' || stage === 'fruiting') {
-                    recommendations.fertilization.needed = (Math.random() > 0.5);
-                    if (recommendations.fertilization.needed) {
-                        recommendations.fertilization.details = `${crop} at ${stage} stage would benefit from phosphorus and potassium rich fertilizer application to support reproductive development.`;
-                    } else {
-                        recommendations.fertilization.details = `Current nutrient levels appear adequate for ${crop} at ${stage} stage. Monitor for signs of specific deficiencies.`;
-                    }
-                }
-            } else {
-                recommendations.fertilization.details = `Soil pH data unavailable for ${crop} at ${stage} stage.`;
-            }
-            
-            // Harvest recommendation
-            if (stage === 'maturity') {
-                const readiness = Math.random();
-                recommendations.harvest.ready = readiness > 0.7;
-                if (recommendations.harvest.ready) {
-                    recommendations.harvest.details = `${crop} shows optimal maturity indicators. Recommend harvesting within the next 3-5 days.`;
+            if (data.humidity !== null && data.temperature !== null) {
+                const optimalHumidity = (stage === 'flowering' || stage === 'fruiting') ? 60 : 50;
+                const fertilizeTemp = (crop === 'wheat' || crop === 'corn') ? 20 : 18;
+                if (data.humidity < optimalHumidity - 20 && data.temperature > fertilizeTemp) {
+                    recommendations.fertilization.needed = true;
+                    recommendations.fertilization.urgency = 'medium';
+                    recommendations.fertilization.details = `For ${crop} at ${stage} stage: Low humidity (${data.humidity}%) and high temperature (${data.temperature}°C) suggest nutrient loss. Fertilize with nitrogen in the morning.`;
+                } else if (data.humidity > optimalHumidity + 10 && data.temperature < fertilizeTemp + 5) {
+                    recommendations.fertilization.needed = true;
+                    recommendations.fertilization.details = `For ${crop} at ${stage} stage: High humidity (${data.humidity}%) and cool temperature (${data.temperature}°C) indicate slow uptake. Apply balanced fertilizer in the afternoon.`;
                 } else {
-                    recommendations.harvest.details = `${crop} is approaching harvest readiness but requires additional 7-10 days for optimal maturity. Continue monitoring moisture levels and temperature.`;
+                    recommendations.fertilization.details = `For ${crop} at ${stage} stage: Conditions (humidity: ${data.humidity}%, temperature: ${data.temperature}°C) are suitable. Fertilize per schedule.`;
                 }
             } else {
-                recommendations.harvest.details = `${crop} at ${stage} stage is not ready for harvest. Continue following recommended cultivation practices.`;
+                recommendations.fertilization.details = 'Insufficient data for fertilization recommendation.';
             }
-            
+
+            // Planting recommendation
+            if (data.moisture !== null && data.temperature !== null && data.humidity !== null) {
+                const minTemp = (crop === 'rice' || crop === 'tomato') ? 20 : 15;
+                const maxTemp = (crop === 'potato' || crop === 'cotton') ? 25 : 30;
+                if (data.moisture > 50 && data.temperature > minTemp && data.temperature < maxTemp && data.humidity > 40) {
+                    recommendations.planting.ready = true;
+                    recommendations.planting.details = `For ${crop}: Ideal conditions (moisture: ${data.moisture}%, temperature: ${data.temperature}°C, humidity: ${data.humidity}%) for planting. Start within 2-3 days.`;
+                } else {
+                    recommendations.planting.details = `For ${crop}: Conditions (moisture: ${data.moisture}%, temperature: ${data.temperature}°C, humidity: ${data.humidity}%) are not optimal. Adjust and wait.`;
+                }
+            } else {
+                recommendations.planting.details = 'Insufficient data for planting recommendation.';
+            }
+
             return recommendations;
         }
-        
+
         function displayRecommendations(recommendations) {
             let html = '';
-            
+
             html += `
                 <div class="recommendation-item">
-                    <div class="recommendation-title">Irrigation Recommendation</div>
+                    <div class="recommendation-title">Irrigation</div>
                     <p>${recommendations.irrigation.details}</p>
-                    ${recommendations.irrigation.needed ? 
-                        `<p class="action-needed">Action: ${recommendations.irrigation.urgency === 'high' ? 'Immediate irrigation required' : 'Schedule irrigation soon'}</p>` : 
-                        ''}
+                    ${recommendations.irrigation.needed ? `<p class="action-needed">Action: ${recommendations.irrigation.urgency === 'high' ? 'Irrigate now' : 'Irrigate soon'}</p>` : ''}
                 </div>
                 <div class="recommendation-item">
-                    <div class="recommendation-title">Cultivation Recommendation</div>
-                    <p>${recommendations.cultivation.details}</p>
-                    ${recommendations.cultivation.needed ? 
-                        `<p class="action-needed">Action: ${recommendations.cultivation.urgency === 'high' ? 'Priority cultivation needed' : 'Plan cultivation activities'}</p>` : 
-                        ''}
-                </div>
-                <div class="recommendation-item">
-                    <div class="recommendation-title">Fertilization Recommendation</div>
+                    <div class="recommendation-title">Fertilization</div>
                     <p>${recommendations.fertilization.details}</p>
-                    ${recommendations.fertilization.needed ? 
-                        `<p class="action-needed">Action: ${recommendations.fertilization.urgency === 'high' ? 'Apply fertilizer immediately' : 'Schedule fertilizer application'}</p>` : 
-                        ''}
+                    ${recommendations.fertilization.needed ? `<p class="action-needed">Action: ${recommendations.fertilization.urgency === 'medium' ? 'Fertilize today' : 'Plan fertilization'}</p>` : ''}
+                </div>
+                <div class="recommendation-item">
+                    <div class="recommendation-title">Planting</div>
+                    <p>${recommendations.planting.details}</p>
+                    ${recommendations.planting.ready ? '<p class="action-needed">Action: Prepare for planting</p>' : ''}
                 </div>
             `;
-            
-            if (selectedStage === 'maturity') {
-                html += `
-                    <div class="recommendation-item">
-                        <div class="recommendation-title">Harvest Recommendation</div>
-                        <p>${recommendations.harvest.details}</p>
-                        ${recommendations.harvest.ready ? 
-                            `<p class="action-needed">Action: Prepare for harvest operations</p>` : 
-                            ''}
-                    </div>
-                `;
-            }
-            
+
             recommendationContent.innerHTML = html;
         }
-        
-        // Initialize with disconnected state
+
         sensorAlert.style.display = 'block';
     </script>
 </body>

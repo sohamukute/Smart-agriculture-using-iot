@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Firebase in ESP-IDF
 
 
@@ -37,4 +36,16 @@ realtime database for now. other features later
 - copy the link of the realtime database (not the website url) to DATABASE_URL 
 =======
 # Smart-agriculture-using-iot
->>>>>>> bef1f7f4b38d3df52a3910683dc206d30775ac42
+### DASHBORD
+![image](https://github.com/user-attachments/assets/1da09d10-d6bc-4c02-9310-af139bcfd2c0)
+### DATABASE
+![image](https://github.com/user-attachments/assets/636f0156-2b4b-4c32-9133-18b1396bc176)
+### LIVE CAMERA FEED
+![image](https://github.com/user-attachments/assets/851cf740-203d-47ff-808f-9d66160daef1)
+### BOT IMAGES
+![image](https://github.com/user-attachments/assets/f5f8cced-adcf-4609-aa2f-5c80373aeb72)
+![image](https://github.com/user-attachments/assets/6846367a-4c48-4d2b-b1a6-887ae8a7b175)
+![image](https://github.com/user-attachments/assets/67c69adc-29fb-4f20-af9c-829e3fa70266)
+
+
+
